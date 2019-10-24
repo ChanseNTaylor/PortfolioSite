@@ -1,0 +1,71 @@
+// Variables
+$navbar-font-color: white;
+$navbar-background-color: #732f8c;
+$navbar-background-color-hover: #8639a2;
+
+$main-font-color: $navbar-font-color;
+$main-background-color: $navbar-background-color;
+
+$footer-font-color: white;
+$footer-background-color: #2f2931;
+
+.navbar
+{
+    display: flex;
+    padding: 0 1vw;
+    background-color: $navbar-background-color;
+}
+.navbar__info
+{
+    display: flex;
+    flex: 2 1 auto;
+    padding: 2vh 2vw;
+    flex-direction: column;
+    color: $navbar-font-color;
+}
+.navbar__list
+{
+    display: flex;
+    list-style: none;
+}
+.navbar__list-item, .navbar__list-item--selected
+{
+    padding: 2vh 2vw;
+    text-decoration: none;
+    transition: border-bottom 150ms linear;
+}
+.navbar__list-item--selected
+{
+    border-bottom: 4px solid white;
+}
+.navbar__list-item:hover, .navbar__list-item--selected:hover
+{
+    border-bottom: 4px solid white;
+    background-color: $navbar-background-color-hover;
+}
+.navbar__list-item:visited, .navbar__list-item--selected
+{
+    color: $navbar-font-color;
+}
+.content
+{
+    padding: 2vh 2vw;
+    background-color: $main-background-color;
+}
+.content__header, .content__description
+{
+    text-align: center;
+    color: $main-font-color;
+}
+.footer
+{
+    padding: 5vh 3vw;
+    color: $footer-font-color;
+    background-color: $footer-background-color;
+}
+
+// Generics
+.no-margins
+{
+    margin: 0;
+}
