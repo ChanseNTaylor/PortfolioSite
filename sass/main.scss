@@ -1,17 +1,13 @@
 // Variables
-$navbar-font-color: white;
-$navbar-background-color: #732f8c;
+$primary-font-color: white;
+$primary-background-color: #732f8c;
 
-$main-font-color: $navbar-font-color;
-$main-background-color: $navbar-background-color;
-
-$footer-font-color: white;
 $footer-background-color: #2f2931;
 
 .navbar
 {
     padding: 0.75rem;
-    background-color: $navbar-background-color;
+    background-color: $primary-background-color;
 }
 .navbar__info
 {
@@ -19,56 +15,74 @@ $footer-background-color: #2f2931;
     margin: 0.5rem 0;
     padding: 0.25rem 1rem;
     flex-direction: column;
-    color: $navbar-font-color;
+    color: $primary-font-color;
 }
-.navbar__list-item, .navbar__list-item--special
+.navbar__list-item,
+.navbar__list-item--special
 {
     margin: 0 0.5rem;
     text-decoration: none;
     padding: 1.25rem 0.75rem;
-    color: $navbar-font-color;
+    color: $primary-font-color;
     transition: border-bottom 100ms linear;
 }
 .navbar__list-item--special
 {
-    border-radius: 0.25rem;
-    border: thin solid $navbar-font-color;
+    border-radius: 0.5rem;
+    border: thin solid $primary-font-color;
     transition: background-color 150ms linear;
 }
 .navbar__list-item:hover
 {
-    padding: 1rem 0.75rem;
-    border-bottom: 0.5rem solid $navbar-font-color;
+    padding: 0.75rem;
+    border-bottom: 0.5rem solid $primary-font-color;
 }
 .navbar__list-item--special:hover
 {
-    color: $navbar-background-color;
-    background-color: $navbar-font-color;
+    color: $primary-background-color;
+    background-color: $primary-font-color;
 }
 .navbar__list-item:visited
 {
-    color: $navbar-font-color;
+    color: $primary-font-color;
 }
 .content
 {
     padding: 1rem;
     min-height: 100vh;
-    color: $main-font-color;
-    background-color: $main-background-color;
+    color: $primary-font-color;
+    background-color: $primary-background-color;
+}
+.content__header--name
+{
+    font-size: 3rem;
 }
 .content__section
 {
-    margin: 2rem 1rem;
+    margin: 2rem;
+}
+.content__images
+{
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.content__image
+{
+    margin: 0.5rem;
+    flex: 2 1 auto;
+    max-width: 500px;
 }
 .footer
 {
-    padding: 2rem;
-    color: $footer-font-color;
+    padding: 3rem;
+    color: $primary-font-color;
     background-color: $footer-background-color;
 }
 .footer__contact
 {
-    padding: 2vh 1vw 5vh;
+    padding: 1rem;
 }
 
 // Generics

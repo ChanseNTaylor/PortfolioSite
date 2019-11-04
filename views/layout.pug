@@ -17,30 +17,33 @@ html
               span.navbar__info-title Web Developer
             .navbar__list.no-margins.is-flex
               a.navbar__list-item.navbar__list-link(href="/#about") ABOUT
-              a.navbar__list-item.navbar__list-link(href="/#portfolio") PROJECTS
+              a.navbar__list-item.navbar__list-link(href="/#projects") PROJECTS
+              a.navbar__list-item.navbar__list-link(href="/#contact") CONTACT
               a.navbar__list-item--special(href="/resume") RESUME
         main.content
-          .content__section.center-text
-            h1.content__header Hi, I'm Chanse!
+          // Please hire me!
+          #me.content__section.center-text
+            h1.content__header--name Hi, I'm Chanse!
             p.content__description Web developer, gamer, and artist.
           #about.content__section
             h1.content__header.center-text About Me
             p.content__description I have no clue of what to put here! I'll touch this section up a bit later!  The important things to know are that I love programming, drawing, computers, video games, and anime!
-          #portfolio.content__section
+          #projects.content__section
             h1.content__header Projects
-            .content__section
-            img(src="https://via.placeholder.com/300")/
-            img(src="https://via.placeholder.com/300")/
-            img(src="https://via.placeholder.com/300")/
-            img(src="https://via.placeholder.com/300")/
-        footer.footer
-          .footer__contact
-            h4 Contact Information
             hr
-            p GitHub: 
-              a(href="https://github.com/ChanseNTaylor") ChanseNTaylor
-            p Email Address: 
-              a(href="mailto:chansen.taylor@gmail.com") Chansen.taylor@gmail.com
-            p Phone Number: 803-450-3804
+            .content__images.is-flex
+              img.content__image(src="https://via.placeholder.com/500")/
+              img.content__image(src="https://via.placeholder.com/500")/
+              img.content__image(src="https://via.placeholder.com/500")/
+              img.content__image(src="https://via.placeholder.com/500")/
+        footer#contact.footer.is-flex
           .footer__copyright.center-text
-            p &COPY Chanse Taylor
+            p Webpage created and designed by Chanse Taylor!
+          .footer__contact
+            h4 Contact
+            hr
+            p GitHub:
+              a(href="https://github.com/ChanseNTaylor")  ChanseNTaylor
+            p Email Address:
+              a(href="mailto:chansen.taylor@gmail.com")  Chansen.taylor@gmail.com
+            p Phone Number: 803-450-3804
