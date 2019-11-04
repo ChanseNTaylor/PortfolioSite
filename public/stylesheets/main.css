@@ -1,42 +1,48 @@
 .navbar {
-  display: flex;
-  padding: 0 1vw;
+  padding: 0.75rem;
   background-color: #732f8c; }
 
 .navbar__info {
-  display: flex;
   flex: 2 1 auto;
-  padding: 1vh 2vw;
+  margin: 0.5rem 0;
+  padding: 0.25rem 1rem;
   flex-direction: column;
   color: white; }
 
-.navbar__list {
-  display: flex;
-  list-style: none; }
-
-.navbar__list-item {
-  padding: 2vh 2vw;
+.navbar__list-item, .navbar__list-item--special {
+  margin: 0 0.5rem;
   text-decoration: none;
-  transition: border-bottom 150ms linear; }
+  padding: 1.25rem 0.75rem;
+  color: white;
+  transition: border-bottom 100ms linear; }
+
+.navbar__list-item--special {
+  border-radius: 0.25rem;
+  border: thin solid white;
+  transition: background-color 150ms linear; }
 
 .navbar__list-item:hover {
-  border-bottom: 4px solid white;
-  background-color: #8639a2; }
+  padding: 1rem 0.75rem;
+  border-bottom: 0.5rem solid white; }
+
+.navbar__list-item--special:hover {
+  color: #732f8c;
+  background-color: white; }
 
 .navbar__list-item:visited {
   color: white; }
 
 .content {
-  padding: 2vh 2vw;
+  padding: 1rem;
   min-height: 100vh;
+  color: white;
   background-color: #732f8c; }
 
-.content__header, .content__description {
-  text-align: center;
-  color: white; }
+.content__section {
+  margin: 2rem 1rem; }
 
 .footer {
-  padding: 3vh 3vw;
+  padding: 2rem;
   color: white;
   background-color: #2f2931; }
 
@@ -48,3 +54,6 @@
 
 .center-text {
   text-align: center; }
+
+.is-flex {
+  display: flex; }

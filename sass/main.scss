@@ -1,7 +1,6 @@
 // Variables
 $navbar-font-color: white;
 $navbar-background-color: #732f8c;
-$navbar-background-color-hover: #8639a2;
 
 $main-font-color: $navbar-font-color;
 $main-background-color: $navbar-background-color;
@@ -11,33 +10,40 @@ $footer-background-color: #2f2931;
 
 .navbar
 {
-    display: flex;
-    padding: 0 1vw;
+    padding: 0.75rem;
     background-color: $navbar-background-color;
 }
 .navbar__info
 {
-    display: flex;
     flex: 2 1 auto;
-    padding: 1vh 2vw;
+    margin: 0.5rem 0;
+    padding: 0.25rem 1rem;
     flex-direction: column;
     color: $navbar-font-color;
 }
-.navbar__list
+.navbar__list-item, .navbar__list-item--special
 {
-    display: flex;
-    list-style: none;
-}
-.navbar__list-item
-{
-    padding: 2vh 2vw;
+    margin: 0 0.5rem;
     text-decoration: none;
-    transition: border-bottom 150ms linear;
+    padding: 1.25rem 0.75rem;
+    color: $navbar-font-color;
+    transition: border-bottom 100ms linear;
+}
+.navbar__list-item--special
+{
+    border-radius: 0.25rem;
+    border: thin solid $navbar-font-color;
+    transition: background-color 150ms linear;
 }
 .navbar__list-item:hover
 {
-    border-bottom: 4px solid white;
-    background-color: $navbar-background-color-hover;
+    padding: 1rem 0.75rem;
+    border-bottom: 0.5rem solid $navbar-font-color;
+}
+.navbar__list-item--special:hover
+{
+    color: $navbar-background-color;
+    background-color: $navbar-font-color;
 }
 .navbar__list-item:visited
 {
@@ -45,18 +51,18 @@ $footer-background-color: #2f2931;
 }
 .content
 {
-    padding: 2vh 2vw;
+    padding: 1rem;
     min-height: 100vh;
+    color: $main-font-color;
     background-color: $main-background-color;
 }
-.content__header, .content__description
+.content__section
 {
-    text-align: center;
-    color: $main-font-color;
+    margin: 2rem 1rem;
 }
 .footer
 {
-    padding: 3vh 3vw;
+    padding: 2rem;
     color: $footer-font-color;
     background-color: $footer-background-color;
 }
@@ -73,4 +79,8 @@ $footer-background-color: #2f2931;
 .center-text
 {
     text-align: center;
+}
+.is-flex
+{
+    display: flex;
 }
