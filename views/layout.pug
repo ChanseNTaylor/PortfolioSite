@@ -22,28 +22,28 @@ html
               a.navbar__list-item--special(href="/resume") RESUME
         main.content
           // Please hire me!
-          #me.content__section.center-text
-            h1.content__header--name Hi, I'm Chanse!
-            p.content__description Web developer, gamer, and artist.
+          #me.content__section--about.center-text.is-flex
+            .content__container.center
+              h1.content__header--name.no-margins Hi, I'm Chanse!
+              p.content__description Web developer, gamer, and artist.
           #about.content__section
-            h1.content__header.center-text About Me
-            p.content__description I have no clue of what to put here! I'll touch this section up a bit later!  The important things to know are that I love programming, drawing, computers, video games, and anime!
+            h1.content__header About
+            p.content__description Howdy, partner!  I'm Chanse, a software engineer focused on the web.  I love developing for the web because it is very easy to share beautiful software with people around the word.
           #projects.content__section
             h1.content__header Projects
             hr
-            .content__images.is-flex
-              img.content__image(src="https://via.placeholder.com/500")/
-              img.content__image(src="https://via.placeholder.com/500")/
-              img.content__image(src="https://via.placeholder.com/500")/
-              img.content__image(src="https://via.placeholder.com/500")/
-        footer#contact.footer.is-flex
-          .footer__copyright.center-text
-            p Webpage created and designed by Chanse Taylor!
-          .footer__contact
-            h4 Contact
-            hr
-            p GitHub:
-              a(href="https://github.com/ChanseNTaylor")  ChanseNTaylor
-            p Email Address:
-              a(href="mailto:chansen.taylor@gmail.com")  Chansen.taylor@gmail.com
-            p Phone Number: 803-450-3804
+            .content__image-container.is-flex.center
+              a(href="/")
+                img.content__image(src="https://via.placeholder.com/500")/
+              a(href="/")
+                img.content__image(src="https://via.placeholder.com/500")/
+              a(href="/")
+                img.content__image(src="https://via.placeholder.com/500")/
+              a(href="/")
+                img.content__image(src="https://via.placeholder.com/500")/
+        footer#contact.footer
+            .footer__contact.is-flex.center-text
+              a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
+              a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
+            .footer__credit.center-text
+              p Webpage developed and designed by Chanse Taylor!        
