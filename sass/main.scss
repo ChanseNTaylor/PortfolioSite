@@ -66,31 +66,37 @@ $primary-background-color: #732f8c;
     {
         align-self: center;
     }
+
+    &__section
+    {
+        padding: 1rem;
+
+        &--about
+        {
+            height: 100vh;
+            padding: 0;
+        }
+    }
+
+    &__header--name
+    {
+        font-size: 3rem;
+    }
+
+    &__image
+    {
+        margin: 0.25rem;
+
+        &-container
+        {
+            width: 75vw;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
 }
-.content__header--name
-{
-    font-size: 3rem;
-}
-.content__section
-{
-    padding: 1rem;
-}
-.content__section--about
-{
-    height: 100vh;
-    padding: 0;
-}
-.content__image-container
-{
-    width: 75vw;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-.content__image
-{
-    margin: 0.25rem;
-}
+
 .footer
 {
     $footer-background-color: #2f2931;

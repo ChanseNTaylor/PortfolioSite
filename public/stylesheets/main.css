@@ -36,25 +36,20 @@
   background-color: #732f8c; }
   .content__container {
     align-self: center; }
-
-.content__header--name {
-  font-size: 3rem; }
-
-.content__section {
-  padding: 1rem; }
-
-.content__section--about {
-  height: 100vh;
-  padding: 0; }
-
-.content__image-container {
-  width: 75vw;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-
-.content__image {
-  margin: 0.25rem; }
+  .content__section {
+    padding: 1rem; }
+    .content__section--about {
+      height: 100vh;
+      padding: 0; }
+  .content__header--name {
+    font-size: 3rem; }
+  .content__image {
+    margin: 0.25rem; }
+    .content__image-container {
+      width: 75vw;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center; }
 
 .footer {
   align-items: center;

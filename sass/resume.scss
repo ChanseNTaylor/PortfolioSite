@@ -1,0 +1,67 @@
+// Variables
+$primary-background-color: #853A9A;
+$secondary-font-color: #8a8a8a;
+
+.wrapper
+{
+    padding: 0.75rem;
+}
+
+.header
+{
+    &__info
+    {
+        flex: 2 1 auto;
+    }
+    &__contact
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.info
+{
+    &__name
+    {
+        font-size: 3rem;
+    }
+    &__job-title
+    {
+        color: $secondary-font-color;
+    }
+}
+
+.section
+{
+    &__rule
+    {
+        height: 0;
+        flex: 1 1 auto;
+        align-self: center;
+
+        &--left
+        {
+            height: 0;
+            flex: 0.05 1 auto;
+            align-self: center;
+        }
+    }
+    &__title
+    {
+    }
+}
+
+// Generics
+.no-margin
+{
+    margin: 0;
+}
+.is-flex
+{
+    display: flex;
+}
+.center-text
+{
+    text-align: center;
+}

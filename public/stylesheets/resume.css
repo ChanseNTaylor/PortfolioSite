@@ -1,0 +1,33 @@
+.wrapper {
+  padding: 0.75rem; }
+
+.header__info {
+  flex: 2 1 auto; }
+
+.header__contact {
+  flex-direction: column;
+  justify-content: center; }
+
+.info__name {
+  font-size: 3rem; }
+
+.info__job-title {
+  color: #8a8a8a; }
+
+.section__rule {
+  height: 0;
+  flex: 1 1 auto;
+  align-self: center; }
+  .section__rule--left {
+    height: 0;
+    flex: 0.05 1 auto;
+    align-self: center; }
+
+.no-margin {
+  margin: 0; }
+
+.is-flex {
+  display: flex; }
+
+.center-text {
+  text-align: center; }
