@@ -1,10 +1,10 @@
 // Variables
-$primary-background-color: #853A9A;
+$primary-font-color: #7e077e;
 $secondary-font-color: #8a8a8a;
 
 .wrapper
 {
-    padding: 0.75rem;
+    padding: 0.25rem;
 }
 
 .header
@@ -15,16 +15,24 @@ $secondary-font-color: #8a8a8a;
     }
     &__contact
     {
+        align-items: end;
         flex-direction: column;
         justify-content: center;
     }
+    &__description
+    {
+        margin: 1.25rem 0 0;
+    }
+
+    padding: 0.75rem;
 }
 
 .info
 {
     &__name
     {
-        font-size: 3rem;
+        font-size: 2.75rem;
+        color: $primary-font-color;
     }
     &__job-title
     {
@@ -43,13 +51,32 @@ $secondary-font-color: #8a8a8a;
         &--left
         {
             height: 0;
-            flex: 0.05 1 auto;
+            flex: 0.015 1 auto;
             align-self: center;
         }
     }
     &__title
     {
+        margin: 0 0.25rem;
+        color: $primary-font-color;
     }
+    &__body
+    {
+        padding: 0.25rem 0.75rem;
+        margin: 0.25rem 0.75rem 0;
+    }
+    &__date
+    {
+        align-self: center;
+        font-size: 0.75rem;
+        color: $secondary-font-color;
+    }
+    &__job-title
+    {
+        flex: 1 1 auto;
+    }
+
+    padding: 0.5rem;
 }
 
 // Generics
@@ -64,4 +91,12 @@ $secondary-font-color: #8a8a8a;
 .center-text
 {
     text-align: center;
+}
+.is-strong
+{
+    font-weight: bold;
+}
+.is-normal-weight
+{
+    font-weight: normal;
 }

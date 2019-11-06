@@ -2,50 +2,73 @@
 doctype html
 html(lang="en-us")
   head
-    meta(charset="utf-8")/
+    meta(charset="utf-8")
     title Chanse Taylor's Resume
-    link(rel='stylesheet', href='/stylesheets/resume.css')/
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")/
+    link(rel='stylesheet', href='/stylesheets/resume.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
   body.no-margin
     .wrapper
-      header
-        .header.is-flex
+      header.header
+        .is-flex
           .header__info
             h1.no-margin.info__name Chanse Taylor
-            h3.no-margin.info__job-title Web Developer 
+            h4.no-margin.info__job-title Software Developer
           .header__contact.is-flex
-            a(href="mailto:Chansen.taylor@gmail.com") E-MAIL
-            a(href="https://github.com/ChanseNTaylor") GITHUB
-            span Phone: (803) 450-3804
-        p.center-text A passionate and creative software developer who loves to develop and design software for the web. 
+            span (803) 450-3804
+            span Chansen.taylor@gmail.com
+            span GitHub.com/ChanseNTaylor
+        p.header__description.center-text A passionate and creative software developer who loves to develop and design for the web.
       main
-        section
+        section.section
           .section__head.is-flex
             hr.section__rule--left
             h2.section__title Technical Skills
             hr.section__rule
-          p Technologies
-          p HTML5, CSS3, JavaScript, C#, Python, Node, and SQL.
-        section
+          .section__body
+            p.is-strong.no-margin Technologies
+            span HTML5, CSS3, JavaScript, C#, Python, Node, and SQL.
+            p.is-strong.no-margin Libraries and Frameworks
+            span Phaser 3, jQuery, Vue, and Bulma.
+            p.is-strong.no-margin Other Tools
+            span Various photo editing software, Git, and NPM.
+        section.section
           .section__head.is-flex
-            h2 Projects
+            hr.section__rule--left
+            h2.section__title Projects
             hr.section__rule
-          p Call Notes App
-          ul
-            li Vue Bulma HTML
-            li Uses the Bulma CSS framework and Vue.js to create a
-        section
+          .section__body
+            p.is-strong.no-margin Call Notes App
+              span.is-normal-weight  (HTML, Bulma, and Vue).
+            ul.no-margin
+              li Designed and developed a simple web page to help myself and coworkers keep track of call notes.
+            p.is-strong.no-margin Untitled Text-Based Adventure Game
+              span.is-normal-weight  (HTML, CSS, JavaScript)
+            ul.no-margin
+              li A small game built for fun!
+            p.is-strong.no-margin Untitled Drawing Application
+              span.is-normal-weight  (HTML, Bulma, and Node with Express)
+            ul.no-margin
+              li A website that I am developing for artists to draw and share with other users.
+        section.section
           .section__head.is-flex
-            h2 Work Experience
+            hr.section__rule--left
+            h2.section__title Work Experience
             hr.section__rule
-          h4 Technical Support Representative
-          span Unisys
-          span (2018 - present)
-          ul
-            li Learned best practices for effective interpersonal communication with clients.
-        section
+          .section__body
+            .is-flex
+              h4.section__job-title.no-margin Technical Support Representative:
+                span.is-normal-weight  Unisys
+              span.section__date (2018 - present)
+            ul.no-margin
+              li Learned best practices for effective interpersonal communication with clients.
+              li Developed strong problem solving skills working with clients to resolve various technical issues.
+              li Contributed regularly to the project knowledge base to assist coworkers.
+              li Wrote simple scripts to automate repetitive call documenting procedures.
+        section.section
           .section__head.is-flex
-            h2 Education
+            hr.section__rule--left
+            h2.section__title Education
             hr.section__rule
-          h4 Bachelor's degree in Math/Computer Science
-          p University of South Carolina Aiken
+          .section__body
+            h4.no-margin Bachelor's degree in Math/Computer Science
+            span University of South Carolina Aiken
