@@ -1,0 +1,3 @@
+[submodule "views/externals/adventure-game"]
+	path = views/externals/adventure-game
+	url = https://github.com/ChanseNTaylor/Adventure-Game.git
