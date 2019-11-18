@@ -19,13 +19,14 @@
       padding: 1.25rem 0.75rem;
       color: white;
       border-radius: 0.5rem;
-      border: thin solid white;
-      transition: background-color 150ms linear; }
+      transition: background-color 200ms;
+      border: thin solid white; }
       .navbar__list-item--special:hover {
         color: #732f8c;
         background-color: white; }
     .navbar__list-item:hover {
       padding: 1rem 0.75rem;
+      transition: border-bottom 100ms ease-in;
       border-bottom: 0.25rem solid white; }
     .navbar__list-item:visited {
       color: white; }
@@ -36,31 +37,45 @@
   background-color: #732f8c; }
   .content__container {
     align-self: center; }
+  .content__description {
+    font-size: 1.5rem; }
   .content__section {
-    padding: 1rem; }
+    padding: 1rem 1rem 2.5rem; }
     .content__section--about {
-      height: 100vh;
+      height: 90vh;
       padding: 0; }
   .content__header--name {
     font-size: 3rem; }
   .content__image {
-    margin: 0.25rem; }
+    width: 500px;
+    height: auto;
+    opacity: 75%;
+    margin: 0.5rem;
+    object-fit: contain;
+    transition: all 225ms; }
     .content__image-container {
-      width: 75vw;
+      width: 72vw;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center; }
+    .content__image:hover {
+      opacity: 100%; }
+
+.project__label {
+  width: 500px;
+  height: 100px;
+  position: absolute; }
 
 .footer {
   align-items: center;
-  padding: 2rem 0 1rem;
+  padding: 3rem 0 1.75rem;
   color: white;
   justify-content: space-between;
   background-color: #2f2931; }
   .footer__contact {
     justify-content: center; }
   .footer__link {
-    margin: 0 0.25rem;
+    margin: 0 0.35rem;
     color: white; }
   .footer__credit {
     color: #676568; }

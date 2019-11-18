@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next)
 {
-    res.sendFile("views/Adventure-Game/index.html", { root: "." });
+    res.sendFile("views/externals/adventure-game/index.html", { root: "." });
 });
 
 module.exports = router;

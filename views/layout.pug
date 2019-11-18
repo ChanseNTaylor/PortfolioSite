@@ -1,11 +1,11 @@
 // Thanks for visiting my website!
 doctype html
-html
+html(lang="en-us")
   head
     title Chanse Taylor's Home Page
-    meta(charset="utf-8")/
-    link(rel='stylesheet', href='/stylesheets/main.css')/
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")/
+    meta(charset="utf-8")
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
   body.no-margins
     block content
       .wrapper
@@ -19,28 +19,29 @@ html
               a.navbar__list-item.navbar__list-link(href="/#about") ABOUT
               a.navbar__list-item.navbar__list-link(href="/#projects") PROJECTS
               a.navbar__list-item.navbar__list-link(href="/#contact") CONTACT
-              a.navbar__list-item--special(href="/resume") RESUME
+              a.navbar__list-item--special(href="/resume") RESUMÉ
         main.content
           // Please hire me!
           #me.content__section--about.center-text.is-flex
             .content__container.center
               h1.content__header--name.no-margins Hi, I'm Chanse!
-              p.content__description Web developer, gamer, and artist.
+              p.content__description Web developer, hardcore gamer, and artist.
           #about.content__section
             h1.content__header About
-            p.content__description Howdy, partner!  I'm Chanse, a software engineer focused on the web.  I love developing for the web because it is very easy to share beautiful software with people around the word.
+            p.content__description Howdy, partner!  I'm Chanse, a software developer with a passion for web development and design. I love developing for the web because it's pretty easy to share beautiful and/or interesting software with people around the world.
           #projects.content__section
             h1.content__header Projects
-            hr
             .content__image-container.is-flex.center
+              .project.content__project
+                .project__label
+                a(href="/game")
+                  img.content__image(src="/images/textGame.png")
               a(href="/")
-                img.content__image(src="https://via.placeholder.com/500")/
+                img.content__image(src="/images/stringGen.png")
               a(href="/")
-                img.content__image(src="https://via.placeholder.com/500")/
+                img.content__image(src="https://via.placeholder.com/450")
               a(href="/")
-                img.content__image(src="https://via.placeholder.com/500")/
-              a(href="/")
-                img.content__image(src="https://via.placeholder.com/500")/
+                img.content__image(src="https://via.placeholder.com/450")
         footer#contact.footer
             .footer__contact.is-flex.center-text
               a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB

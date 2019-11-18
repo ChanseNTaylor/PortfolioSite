@@ -34,8 +34,8 @@ $primary-background-color: #732f8c;
             @include navbar-item;
 
             border-radius: 0.5rem;
+            transition: background-color 200ms;
             border: thin solid $primary-font-color;
-            transition: background-color 150ms linear;
 
             &:hover
             {
@@ -47,6 +47,7 @@ $primary-background-color: #732f8c;
         &:hover
         {
             padding: 1rem 0.75rem;
+            transition: border-bottom 100ms ease-in;
             border-bottom: 0.25rem solid $primary-font-color;
         }
 
@@ -67,13 +68,18 @@ $primary-background-color: #732f8c;
         align-self: center;
     }
 
+    &__description
+    {
+        font-size: 1.5rem;
+    }
+
     &__section
     {
-        padding: 1rem;
+        padding: 1rem 1rem 2.5rem;
 
         &--about
         {
-            height: 100vh;
+            height: 90vh;
             padding: 0;
         }
     }
@@ -85,16 +91,33 @@ $primary-background-color: #732f8c;
 
     &__image
     {
-        margin: 0.25rem;
+        width: 500px;
+        height: auto;
+        opacity: 75%;
+        margin: 0.5rem;
+        object-fit: contain;
+        transition: all 225ms;
 
         &-container
         {
-            width: 75vw;
+            width: 72vw;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
         }
+
+        &:hover
+        {
+            opacity: 100%;
+        }
     }
+}
+
+.project__label
+{
+    width: 500px;
+    height: 100px;
+    position: absolute;
 }
 
 .footer
@@ -103,7 +126,7 @@ $primary-background-color: #732f8c;
     $footer-secondary-font-color: #676568;
 
     align-items: center;
-    padding: 2rem 0 1rem;
+    padding: 3rem 0 1.75rem;
     color: $primary-font-color;
     justify-content: space-between;
     background-color: $footer-background-color;
@@ -115,7 +138,7 @@ $primary-background-color: #732f8c;
 
     &__link
     {
-        margin: 0 0.25rem;
+        margin: 0 0.35rem;
         color: $primary-font-color;
     }
 
