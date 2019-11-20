@@ -2,6 +2,8 @@
 $primary-font-color: white;
 $primary-background-color: #732f8c;
 
+$project-background-color: #4f1d4c;
+
 .navbar
 {
     @mixin navbar-item
@@ -84,8 +86,7 @@ $primary-background-color: #732f8c;
 
     &__image
     {
-        width: 500px;
-        height: auto;
+        width: 450px;
         opacity: 50%;
         margin: 0.5rem;
         object-fit: contain;
@@ -107,10 +108,43 @@ $primary-background-color: #732f8c;
 
 .project
 {
-    width: 45vw;
-    height: auto;
-    margin: 0.5rem;
-    background-color: gray;
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+    flex-direction: columns;
+    padding: 0.25rem 0.5rem;
+    background-color: $project-background-color;
+
+    &__info
+    {
+        flex-direction: column;
+
+        &-title
+        {
+            margin: 0.15rem;
+        }
+
+        &-subtitle
+        {
+            margin: 0;
+        }
+    }
+
+    &__button
+    {
+        color: white;
+        margin: 0.25rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        border: 1px solid white;
+        transition: background-color 200ms;
+
+        &:hover
+        {
+            color: $primary-background-color;
+            background-color: $primary-font-color;
+        }
+    }
 }
 
 .footer
@@ -157,4 +191,13 @@ $primary-background-color: #732f8c;
 .is-flex
 {
     display: flex;
+}
+
+// Media Queries
+@media only screen and (min-width: 1400px)
+{
+    .project
+    {
+        width: 45vw;
+    }
 }

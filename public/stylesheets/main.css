@@ -42,8 +42,7 @@
   .content__header--name {
     font-size: 3rem; }
   .content__image {
-    width: 500px;
-    height: auto;
+    width: 450px;
     opacity: 50%;
     margin: 0.5rem;
     object-fit: contain;
@@ -56,10 +55,28 @@
       opacity: 100%; }
 
 .project {
-  width: 45vw;
-  height: auto;
-  margin: 0.5rem;
-  background-color: gray; }
+  margin: 0.25rem;
+  border-radius: 0.5rem;
+  flex-direction: columns;
+  padding: 0.25rem 0.5rem;
+  background-color: #4f1d4c; }
+  .project__info {
+    flex-direction: column; }
+    .project__info-title {
+      margin: 0.15rem; }
+    .project__info-subtitle {
+      margin: 0; }
+  .project__button {
+    color: white;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 1px solid white;
+    transition: background-color 200ms; }
+    .project__button:hover {
+      color: #732f8c;
+      background-color: white; }
 
 .footer {
   align-items: center;
@@ -86,3 +103,7 @@
 
 .is-flex {
   display: flex; }
+
+@media only screen and (min-width: 1400px) {
+  .project {
+    width: 45vw; } }
