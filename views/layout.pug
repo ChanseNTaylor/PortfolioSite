@@ -11,10 +11,7 @@ html(lang="en-us")
       .wrapper
         header
           nav.navbar.is-flex
-            img.navbar__icon(alt="Nav Icon" src="https://via.placeholder.com/50")/
-            .navbar__info.is-flex
-              span.navbar__info-name Chanse Taylor
-              span.navbar__info-title Web Developer
+            img(alt="Nav Icon" src="https://via.placeholder.com/50")
             .navbar__list.no-margins.is-flex
               a.navbar__list-item.navbar__list-link(href="/#about") ABOUT
               a.navbar__list-item.navbar__list-link(href="/#projects") PROJECTS
@@ -22,22 +19,38 @@ html(lang="en-us")
               a.navbar__list-item--special(href="/resume") RESUMÉ
         main.content
           // Please hire me!
-          #me.content__section--about.center-text.is-flex
+          .content__section--about.center-text.is-flex
             .content__container.center
-              h1.content__header--name.no-margins Hi, I'm Chanse!
-              p.content__description Web developer, hardcore gamer, and artist.
+              h1.content__header--name.no-margins Hello! I'm Chanse!
+              p.content__description Web developer, web designer, artist, and hardcore gamer.
           #about.content__section
             h1.content__header About
-            p.content__description Howdy, partner!  I'm Chanse, a software developer with a passion for web development and design. I love developing for the web because it's pretty easy to share beautiful and/or interesting software with people around the world.
+            p.content__description I'm Chanse, a software developer with a passion for web development and design. I love developing for the web because it's easy to share beautiful and/or interesting software with many people around the world.
+            p.content__description It also provides me with the opportunity to express myself creatively.
           #projects.content__section
             h1.content__header Projects
             .content__image-container.is-flex.center
-              .project.content__project
-                .project__label
+              .project.is-flex
                 a(href="/game")
                   img.content__image(src="/images/textGame.png")
-              a(href="/")
-                img.content__image(src="/images/stringGen.png")
+                .project__info
+                  h2 Dragon Hunting
+                  h4 A text-based adventure game
+                  p This is a text-based adventure game (think ZORK) about a knight on a mission to slay a dragon.
+                  p This game was put together to give me a little practice with object oriented programming.
+                  .info__links.is-flex
+                    a(href="/") GitHub
+                    a(href="/game") Live Version
+              .project.is-flex
+                a(href="/")
+                  img.content__image(src="/images/stringGen.png")
+                .project__info
+                  h2 Random String Generator
+                  p This is a generator that makes psuedo random strings that you can copy to the clipboard.
+                  p I made this because I have a tendency to name my digital art names like "aaaaaa.jpg" and "hhhhh.png".  This works fine for a short while, but eventually you need to change it up a bit and that is what this is for.  To avoid naming conflict in my digital art folders.
+                  .info__links.is-flex
+                    a(href="/") GitHub
+                    a(href="/") Live Version
               a(href="/")
                 img.content__image(src="https://via.placeholder.com/450")
               a(href="/")
@@ -47,4 +60,4 @@ html(lang="en-us")
               a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
               a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
             .footer__credit.center-text
-              p Webpage developed and designed by Chanse Taylor!        
+              p Webpage developed and designed by Chanse Taylor!

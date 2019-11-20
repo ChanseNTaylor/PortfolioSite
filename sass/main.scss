@@ -13,17 +13,9 @@ $primary-background-color: #732f8c;
     }
 
     padding: 0.75rem;
+    justify-content: space-between;
     transition: border-bottom 100ms linear;
     background-color: $primary-background-color;
-
-    &__info
-    {
-        flex: 2 1 auto;
-        margin: 0.5rem 0;
-        padding: 0.25rem 1rem;
-        flex-direction: column;
-        color: $primary-font-color;
-    }
 
     &__list-item
     {
@@ -57,6 +49,7 @@ $primary-background-color: #732f8c;
         }
     }
 }
+
 .content
 {
     min-height: 100vh;
@@ -93,14 +86,13 @@ $primary-background-color: #732f8c;
     {
         width: 500px;
         height: auto;
-        opacity: 75%;
+        opacity: 50%;
         margin: 0.5rem;
         object-fit: contain;
-        transition: all 225ms;
+        transition: opacity 250ms;
 
         &-container
         {
-            width: 72vw;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
@@ -113,11 +105,12 @@ $primary-background-color: #732f8c;
     }
 }
 
-.project__label
+.project
 {
-    width: 500px;
-    height: 100px;
-    position: absolute;
+    width: 45vw;
+    height: auto;
+    margin: 0.5rem;
+    background-color: gray;
 }
 
 .footer
