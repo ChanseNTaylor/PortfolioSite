@@ -86,11 +86,12 @@ $project-background-color: #4f1d4c;
 
     &__image
     {
-        width: 450px;
-        opacity: 50%;
-        margin: 0.5rem;
+        width: 100%;
+        opacity: 70%;
         object-fit: contain;
+        border-radius: 0.35rem;
         transition: opacity 250ms;
+        margin: 0.1rem 0.75rem 0.35rem 0;
 
         &-container
         {
@@ -110,9 +111,14 @@ $project-background-color: #4f1d4c;
 {
     margin: 0.25rem;
     border-radius: 0.5rem;
-    flex-direction: columns;
-    padding: 0.25rem 0.5rem;
+    flex-direction: column;
+    padding: 0.5rem;
     background-color: $project-background-color;
+
+    &__content
+    {
+        flex: 1 1 auto;
+    }
 
     &__info
     {
@@ -120,19 +126,14 @@ $project-background-color: #4f1d4c;
 
         &-title
         {
-            margin: 0.15rem;
-        }
-
-        &-subtitle
-        {
-            margin: 0;
+            margin: 0.125rem;
         }
     }
 
     &__button
     {
         color: white;
-        margin: 0.25rem;
+        margin: 0 0.35rem;
         padding: 0.5rem;
         border-radius: 0.5rem;
         text-decoration: none;
@@ -145,6 +146,20 @@ $project-background-color: #4f1d4c;
             background-color: $primary-font-color;
         }
     }
+
+    &__tags
+    {
+        height: 2rem;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        background-color: #351033;
+
+        span
+        {
+            margin: 0.15rem;
+            vertical-align: -moz-middle-with-baseline;
+        }
+    }
 }
 
 .footer
@@ -152,8 +167,8 @@ $project-background-color: #4f1d4c;
     $footer-background-color: #2f2931;
     $footer-secondary-font-color: #676568;
 
+    padding: 5rem;
     align-items: center;
-    padding: 3rem 0 1.75rem;
     color: $primary-font-color;
     justify-content: space-between;
     background-color: $footer-background-color;

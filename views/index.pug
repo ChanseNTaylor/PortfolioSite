@@ -1,1 +1,102 @@
 extends layout
+
+block content
+  // Please hire me!
+  main.content
+    .content__section--about.center-text.is-flex
+      .content__container.center
+        h1.content__header--name.no-margins Hello! I'm Chanse!
+        p.content__description Web developer, web designer, artist, and hardcore gamer.
+    #about.content__section
+      h1.content__header About Me
+      p.content__description I'm Chanse, a software developer with lots of different interests.  I enjoy most anything that gives me the opportunity to express myself creatively.  I enjoy drawing, design, and sometimes writing.  Basically, I love to create things for people to use and see.
+      p.content__description Not only do I love art and design, but I also have a passion for web development. As it also allows me to create, design, and share.  I love developing for the web because it's easy to share the software that I create with many people around the world.
+    #projects.content__section
+      h1.content__header Projects
+      .content__image-container.is-flex.center
+        // Project 1
+        .project.is-flex
+          .project__content.is-flex
+            img.content__image(src="/images/textGame.png")
+            .project__info
+              h2.project__info-title Dragon Hunting!
+              h4.no-margins A text-based adventure game
+              p This is a text-based adventure game (think ZORK) about a knight on a mission to slay a dragon.
+              p This game was put together to give me a little practice with object oriented programming.
+              .info__links.is-flex
+                a.project__button(href="https://github.com/ChanseNTaylor/Adventure-Game") GitHub
+                a.project__button(href="/game") Live Version
+          .project__tags
+            span #HTML5
+            span #CSS3
+            span #JavaScript
+        // Project 2
+        .project.is-flex
+          .project__content.is-flex
+            img.content__image(src="/images/stringGen.png")
+            .project__info
+              h2.project__info-title Random String Generator
+              h4.no-margins A psuedo random string generator
+              p This generator that makes strings that you can copy to the clipboard.
+              p This was made because I tend to name my artwork things like "aaaa.png". This works for a while, but eventually I run into naming conflicts.
+              .info__links.is-flex
+                a.project__button(href="/") GitHub
+                a.project__button(href="/") Live Version
+          .project__tags
+            span #HTML5
+            span #CSS3
+            span #JavaScript
+        // Project 3
+        .project.is-flex
+          .project__content.is-flex
+            img.content__image(src="/images/callNotes.png")
+            .project__info
+              h2.project__info-title Call Notes App
+              h4.no-margins A note taking app
+              p I made this because it's hard to keep up with the notes of a single day.
+              p I've shared this with a few coworkers and they all love it!
+              .info__links.is-flex
+                a.project__button(href="https://github.com/ChanseNTaylor/NoteTakingApp") GitHub
+                a.project__button(href="/") Live Version
+          .project__tags
+            span #Vue
+            span #Bulma
+            span #HTML5
+        // Project 4
+        .project.is-flex
+          .project__content.is-flex
+            img.content__image(src="/images/stringGen.png")
+            .project__info
+              h2.project__info-title Untitled Drawing App
+              h4.no-margins Create and publish digital artwork
+              p This is a webapp that allows artists to create and share artwork.
+              p I started this when I realized that flash-based drawr.net will be going away with the death of Adobe Flash.  I wanted to create an HTML5-based alternative to drawr.
+              .info__links.is-flex
+                a.project__button(href="/") GitHub
+          .project__tags
+            span #Bulma
+            span #JavaScript
+            span #Sass
+            span #Node
+            span #Express
+            span #Pug
+        // Project 5
+        .project.is-flex
+          .project__content.is-flex
+            img.content__image(src="/images/stringGen.png")
+            .project__info
+              h2.project__info-title DWM Monster Guide
+              h4.no-margins A guide for how making the monsters in Dragon Warrior Monsters.
+              p I made this so that it would be easier for me to keep up with information about this game's monsters.
+              .info__links.is-flex
+                a.project__button(href="/") GitHub
+                a.project__button(href="/") Live Version
+          .project__tags
+            span #HTML5
+            span #MongoDB
+  footer#contact.footer.is-flex
+      .footer__contact.is-flex.center-text
+        a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
+        a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
+      .footer__credit.center-text
+        p Webpage developed and designed by Chanse Taylor!

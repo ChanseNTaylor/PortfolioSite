@@ -2,63 +2,18 @@
 doctype html
 html(lang="en-us")
   head
-    title Chanse Taylor's Home Page
     meta(charset="utf-8")
+    title Chanse Taylor's Home Page
     link(rel='stylesheet', href='/stylesheets/main.css')
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body.no-margins
-    block content
-      .wrapper
-        header
-          nav.navbar.is-flex
-            img(alt="Nav Icon" src="https://via.placeholder.com/50")
-            .navbar__list.no-margins.is-flex
-              a.navbar__list-item.navbar__list-link(href="/#about") ABOUT
-              a.navbar__list-item.navbar__list-link(href="/#projects") PROJECTS
-              a.navbar__list-item.navbar__list-link(href="/#contact") CONTACT
-              a.navbar__list-item--special(href="/resume") RESUMÉ
-        main.content
-          // Please hire me!
-          .content__section--about.center-text.is-flex
-            .content__container.center
-              h1.content__header--name.no-margins Hello! I'm Chanse!
-              p.content__description Web developer, web designer, artist, and hardcore gamer.
-          #about.content__section
-            h1.content__header About
-            p.content__description I'm Chanse, a software developer with a passion for web development and design. I love developing for the web because it's easy to share beautiful and/or interesting software with many people around the world.
-            p.content__description It also provides me with the opportunity to express myself creatively.
-          #projects.content__section
-            h1.content__header Projects
-            .content__image-container.is-flex.center
-              .project.is-flex
-                a(href="/game")
-                  img.content__image(src="/images/textGame.png")
-                .project__info.is-flex
-                  h2.project__info-title Dragon Hunting
-                  h4.no-margins A text-based adventure game
-                  p This is a text-based adventure game (think ZORK) about a knight on a mission to slay a dragon.
-                  p This game was put together to give me a little practice with object oriented programming.
-                  .info__links.is-flex
-                    a.project__button(href="https://github.com/ChanseNTaylor/Adventure-Game") GitHub
-                    a.project__button(href="/game") Live Version
-              .project.is-flex
-                a(href="/")
-                  img.content__image(src="/images/stringGen.png")
-                .project__info
-                  h2.project__info-title Random String Generator
-                  h4.no-margins A psuedo random string generator
-                  p This generator that makes strings that you can copy to the clipboard.
-                  p I made this because I've a tendency to name my artwork things like "aaaaaa.png". This works fine for a while, but eventually I need to change it up due to naming conflicts.
-                  .info__links.is-flex
-                    a.project__button(href="/") GitHub
-                    a.project__button(href="/") Live Version
-              a(href="/")
-                img.content__image(src="https://via.placeholder.com/450")
-              a(href="/")
-                img.content__image(src="https://via.placeholder.com/450")
-        footer#contact.footer
-            .footer__contact.is-flex.center-text
-              a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
-              a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
-            .footer__credit.center-text
-              p Webpage developed and designed by Chanse Taylor!
+    .wrapper
+      header
+        nav.navbar.is-flex
+          img(alt="Nav Icon" src="https://via.placeholder.com/50")
+          .navbar__list.no-margins.is-flex
+            a.navbar__list-item(href="/#about") ABOUT
+            a.navbar__list-item(href="/#projects") PROJECTS
+            a.navbar__list-item(href="/#contact") CONTACT
+            a.navbar__list-item--special(href="/resume") RESUMÉ
+        block content
