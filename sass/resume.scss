@@ -31,7 +31,7 @@ $secondary-font-color: #8a8a8a;
 {
     &__name
     {
-        font-size: 2.75rem;
+        font-size: 2rem;
         color: $primary-font-color;
     }
     &__job-title
@@ -58,6 +58,7 @@ $secondary-font-color: #8a8a8a;
     &__title
     {
         margin: 0 0.25rem;
+        font-size: 1.125rem;
         color: $primary-font-color;
     }
     &__body
@@ -68,7 +69,7 @@ $secondary-font-color: #8a8a8a;
     &__date
     {
         align-self: center;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         color: $secondary-font-color;
     }
     &__job-title
@@ -83,6 +84,10 @@ $secondary-font-color: #8a8a8a;
 .no-margin
 {
     margin: 0;
+}
+.flex
+{
+    flex: 1 1 auto;
 }
 .is-flex
 {

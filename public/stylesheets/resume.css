@@ -13,7 +13,7 @@
     margin: 1.25rem 0 0; }
 
 .info__name {
-  font-size: 2.75rem;
+  font-size: 2rem;
   color: #7e077e; }
 
 .info__job-title {
@@ -31,19 +31,23 @@
       align-self: center; }
   .section__title {
     margin: 0 0.25rem;
+    font-size: 1.125rem;
     color: #7e077e; }
   .section__body {
     padding: 0.25rem 0.75rem;
     margin: 0.25rem 0.75rem 0; }
   .section__date {
     align-self: center;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: #8a8a8a; }
   .section__job-title {
     flex: 1 1 auto; }
 
 .no-margin {
   margin: 0; }
+
+.flex {
+  flex: 1 1 auto; }
 
 .is-flex {
   display: flex; }

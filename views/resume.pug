@@ -1,3 +1,9 @@
+mixin sectionHead(title)
+  .section__head.is-flex
+    hr.section__rule--left
+    h2.section__title #{title}
+    hr.section__rule
+
 // Thank you for viewing my resume!
 doctype html
 html(lang="en-us")
@@ -12,48 +18,43 @@ html(lang="en-us")
         .is-flex
           .header__info
             h1.no-margin.info__name Chanse Taylor
-            h4.no-margin.info__job-title Software Developer
+            h4.no-margin.info__job-title Web Developer
           .header__contact.is-flex
             span (803) 450-3804
-            span Chansen.taylor@gmail.com
-            span GitHub.com/ChanseNTaylor
-        p.header__description.center-text A passionate and creative software developer who loves to develop and design for the web.
+            a(href="mailto:Chansen.taylor@gmail.com") Chansen.taylor@gmail.com
+            a(href="https://github.com/ChanseNTaylor") GitHub.com/ChanseNTaylor
+        p.header__description.center-text A self-motivated and creative software developer who loves the unique, creative potential provided by web devlopment.
       main
         section.section
-          .section__head.is-flex
-            hr.section__rule--left
-            h2.section__title Technical Skills
-            hr.section__rule
+          +sectionHead('Technical Skills')
           .section__body
             p.is-strong.no-margin Technologies
-            span HTML5, CSS3, JavaScript, C#, Python, Node, and SQL.
+            span HTML5/Pug, CSS3/SASS, JavaScript, C#, Python, Node, and SQL.
             p.is-strong.no-margin Libraries and Frameworks
             span Phaser 3, jQuery, Vue, and Bulma.
             p.is-strong.no-margin Other Tools
-            span Various photo editing software, Git, and NPM.
+            span Photo editing software, Git, and NPM.
         section.section
-          .section__head.is-flex
-            hr.section__rule--left
-            h2.section__title Projects
-            hr.section__rule
+          +sectionHead('Projects')
           .section__body
             p.is-strong.no-margin Call Notes App
-              span.is-normal-weight  (HTML, Bulma, and Vue).
             ul.no-margin
-              li Designed and developed a simple web page to help myself and coworkers keep track of call notes.
-            p.is-strong.no-margin Untitled Text-Based Adventure Game
-              span.is-normal-weight  (HTML, CSS, JavaScript)
+              li Uses HTML5, Bulma CSS framework, and Vue.js
+              li Developed a web page to help myself and my coworkers keep track of call notes
+            p.is-strong.no-margin Adventure Game
             ul.no-margin
-              li A small game built for fun!
+              li Uses basic HTML5, CSS3, and JavaScript
+              li A small game built to practice design patterns and object-oriented programming in JavaScript
+            p.is-strong.no-margin Dragon Warrior Monsters Monster Guide
+            ul.no-margin
+              li Uses Pug/Jade, MongoDB, and node.js with express
+              li A website that provides information about characters from the video game Dragon Warrior Monsters
             p.is-strong.no-margin Untitled Drawing Application
-              span.is-normal-weight  (HTML, Bulma, and Node with Express)
             ul.no-margin
-              li A website that I am developing for artists to draw and share with other users.
+              li Uses Pug/Jade, Bulma CSS framework, and node.js with express
+              li A website that allows artists to draw and share works with other users.
         section.section
-          .section__head.is-flex
-            hr.section__rule--left
-            h2.section__title Work Experience
-            hr.section__rule
+          +sectionHead('Work Experience')
           .section__body
             .is-flex
               h4.section__job-title.no-margin Technical Support Representative:
@@ -61,14 +62,30 @@ html(lang="en-us")
               span.section__date (2018 - present)
             ul.no-margin
               li Learned best practices for effective interpersonal communication with clients.
-              li Developed strong problem solving skills working with clients to resolve various technical issues.
-              li Contributed regularly to the project knowledge base to assist coworkers.
+              li Developed strong problem solving skills while working with clients to resolve various technical issues.
               li Wrote simple scripts to automate repetitive call documenting procedures.
         section.section
-          .section__head.is-flex
-            hr.section__rule--left
-            h2.section__title Education
-            hr.section__rule
+          +sectionHead('Education')
           .section__body
-            h4.no-margin Bachelor's degree in Math/Computer Science
+            .is-flex
+              h4.no-margin.section__job-title Bachelor's degree in Math/Computer Science
+              span.section__date (Completed in 2019)
             span University of South Carolina Aiken
+        section.section
+          +sectionHead('References')
+          .section__body.is-flex
+            .flex
+              h4.no-margin Catherine Brohaugh
+              span Level 2 Technical Support Representative
+              p (888) 483-4583
+              p Catherine.Brohaugh@unisys.com
+            .flex
+              h4.no-margin Rao Li
+              span College Professor
+              p (888) 439-4592
+              p raoli@usca.edu
+            .flex
+              h4.no-margin Nicholas Corbin
+              span Manager
+              p (888) 439-4592
+              p raoli@usca.edu
