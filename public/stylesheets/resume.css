@@ -20,7 +20,7 @@
   color: #8a8a8a; }
 
 .section {
-  padding: 0.5rem; }
+  padding: 0.25rem; }
   .section__rule {
     height: 0;
     flex: 1 1 auto;
@@ -51,6 +51,9 @@
 
 .is-flex {
   display: flex; }
+
+.is-block {
+  display: block; }
 
 .center-text {
   text-align: center; }

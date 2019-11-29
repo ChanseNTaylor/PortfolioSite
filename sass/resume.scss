@@ -77,7 +77,7 @@ $secondary-font-color: #8a8a8a;
         flex: 1 1 auto;
     }
 
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
 
 // Generics
@@ -92,6 +92,10 @@ $secondary-font-color: #8a8a8a;
 .is-flex
 {
     display: flex;
+}
+.is-block
+{
+    display: block;
 }
 .center-text
 {
