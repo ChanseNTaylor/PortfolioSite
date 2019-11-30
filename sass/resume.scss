@@ -4,15 +4,11 @@ $secondary-font-color: #8a8a8a;
 
 .wrapper
 {
-    padding: 0.25rem;
+    padding: 0.5rem;
 }
 
 .header
 {
-    &__info
-    {
-        flex: 2 1 auto;
-    }
     &__contact
     {
         align-items: end;
@@ -21,10 +17,10 @@ $secondary-font-color: #8a8a8a;
     }
     &__description
     {
-        margin: 1.25rem 0 0;
+        margin-top: 1.25rem 0 0;
     }
 
-    padding: 0.75rem;
+    padding: 0.25rem;
 }
 
 .info
@@ -45,7 +41,6 @@ $secondary-font-color: #8a8a8a;
     &__rule
     {
         height: 0;
-        flex: 1 1 auto;
         align-self: center;
 
         &--left
@@ -74,8 +69,13 @@ $secondary-font-color: #8a8a8a;
     &__date
     {
         align-self: center;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         color: $secondary-font-color;
+    }
+    &__reference
+    {
+        font-size: 0.85rem;
+        margin-right: 0.5rem;
     }
 
     padding: 0.25rem;
@@ -112,5 +112,5 @@ $secondary-font-color: #8a8a8a;
 }
 .indent
 {
-    text-indent: 2rem;
+    text-indent: 1rem;
 }

@@ -2,7 +2,7 @@ mixin sectionHead(title)
   .section__head.is-flex
     hr.section__rule--left
     h2.section__title #{title}
-    hr.section__rule
+    hr.section__rule.flex
 
 // Thank you for viewing my resume!
 doctype html
@@ -16,7 +16,7 @@ html(lang="en-us")
     .wrapper
       header.header
         .is-flex
-          .header__info
+          .header__info.flex
             h1.no-margin.info__name Chanse Taylor
             h4.no-margin.info__job-title Web Developer
           .header__contact.is-flex
@@ -30,25 +30,25 @@ html(lang="en-us")
           .section__body
             p.is-strong.no-margin.section__body-title Technologies
             span.indent.is-block HTML5/Pug, CSS3/SASS, JavaScript, C#(Unity), Python, Node, MongoDB, and SQL.
-            p.is-strong.no-margin Libraries and Frameworks
+            p.is-strong.no-margin.section__body-title Libraries and Frameworks
             span.indent.is-block Phaser 3, jQuery, Vue, and Bulma.
-            p.is-strong.no-margin Other Tools
-            span.indent.is-block Photo editing software, Git, and NPM.
+            p.is-strong.no-margin.section__body-title Other Tools
+            span.indent.is-block Photo editing software, Git, Sublime Text 3, and NPM.
         section.section
           +sectionHead('Projects')
           .section__body
             p.is-strong.no-margin Call Notes App
             ul.no-margin
-              li Uses HTML5, Bulma CSS framework, and Vue.js
-              li Developed a web page to help myself and my coworkers keep track of call notes
+              li Uses HTML5, Bulma CSS framework, and Vue.js.
+              li Developed a web page to help myself and my coworkers keep track of call notes.
             p.is-strong.no-margin Adventure Game
             ul.no-margin
-              li Uses HTML5, CSS3, and JavaScript
-              li A small game built to practice design patterns and object-oriented programming in JavaScript
+              li Uses HTML5, CSS3, and JavaScript.
+              li A small text-based game similar to Zork built to practice design patterns and object-oriented programming in JavaScript.
             p.is-strong.no-margin Dragon Warrior Monsters Monster Guide
             ul.no-margin
-              li Uses Pug/Jade, MongoDB, and node.js with express
-              li A website that provides information about characters from the video game Dragon Warrior Monsters
+              li Uses Pug/Jade, MongoDB, SASS/CSS, and node.js with express.
+              li A website that provides information about characters from the video game Dragon Warrior Monsters.
             p.is-strong.no-margin Untitled Drawing Application
             ul.no-margin
               li Uses Pug/Jade, Bulma CSS framework, and node.js with express
@@ -74,18 +74,18 @@ html(lang="en-us")
         section.section
           +sectionHead('References')
           .section__body.is-flex
-            .flex
+            .flex.section__reference
               h4.no-margin Catherine Brohaugh
-              span.is-block Unisys Level 2 Technical Support Representative
-              span.is-block (888) 483-4583
+              span.is-block Unisys Level 2 Technical Support Rep.
+              span.is-block (828)963-0442
               a(href="mailto:Catherine.Brohaugh@unisys.com") Catherine.Brohaugh@unisys.com
-            .flex
+            .flex.section__reference
               h4.no-margin Rao Li
-              span.is-block College Professor
-              span.is-block (888) 439-4592
-              a(href="mailto:") raoli@usca.edu
-            .flex
+              span.is-block USC Aiken Professor
+              span.is-block (803)641-3264
+              a(href="mailto:RaoL@usca.edu") RaoL@usca.edu
+            .flex.section__reference
               h4.no-margin Nicholas Corbin
-              span.is-block Unisys Technical Support Manager
-              span.is-block (888) 439-4592
+              span.is-block Manager at Unisys
+              span.is-block (706)496-0054
               a(href="mailto:Nicholas.Corbin@unisys.com") Nicholas.Corbin@unisys.com
