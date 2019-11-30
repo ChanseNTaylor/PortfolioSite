@@ -31,17 +31,17 @@
       align-self: center; }
   .section__title {
     margin: 0 0.25rem;
-    font-size: 1.125rem;
+    font-size: 1.15rem;
     color: #7e077e; }
   .section__body {
     padding: 0.25rem 0.75rem;
     margin: 0.25rem 0.75rem 0; }
+    .section__body-title {
+      padding-bottom: 0.25rem; }
   .section__date {
     align-self: center;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: #8a8a8a; }
-  .section__job-title {
-    flex: 1 1 auto; }
 
 .no-margin {
   margin: 0; }
@@ -63,3 +63,6 @@
 
 .is-normal-weight {
   font-weight: normal; }
+
+.indent {
+  text-indent: 2rem; }

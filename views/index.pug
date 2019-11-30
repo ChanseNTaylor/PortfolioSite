@@ -3,11 +3,11 @@ extends layout
 block content
   // Please hire me!
   main.content
-    .content__section--about.center-text.is-flex
+    .content__section--main.center-text.is-flex
       .content__container.center
         h1.content__header--name.no-margins Hello! I'm Chanse!
         p.content__description Web developer, web designer, artist, and hardcore gamer.
-    #about.content__section
+    #about.content__section.content__section--about
       h1.content__header About Me
       p.content__description I'm Chanse, a software developer with lots of different interests. I enjoy most anything that gives me the opportunity to express myself creatively. I enjoy drawing, design, and sometimes writing. Basically, I love to create things for people to use and see.
       p.content__description Not only do I love art and design, but I also have a passion for web development. As it also allows me to create, design, and share.  I love developing for the web because it's easy to share the software that I create with many people around the world.
@@ -40,7 +40,7 @@ block content
               p This generator that makes strings that you can copy to the clipboard.
               p This was made because I tend to name my artwork things like "aaaa.png". This works for a while, but eventually I run into naming conflicts.
               .info__links.is-flex
-                a.project__button(href="/") GitHub
+                a.project__button(href="https://github.com/ChanseNTaylor/randomstringgenerator") GitHub
                 a.project__button(href="/") Live Version
           .project__tags
             span #HTML5
@@ -72,7 +72,7 @@ block content
               p This is a webapp that allows artists to create and share artwork.
               p I started this when I realized that flash-based drawr.net will be going away with the death of Adobe Flash.  I wanted to create an HTML5-based alternative to drawr.
               .info__links.is-flex
-                a.project__button(href="/") GitHub
+                a.project__button(href="https://github.com/ChanseNTaylor/DrawingApp") GitHub
           .project__tags
             span #Bulma
             span #JavaScript
@@ -94,9 +94,10 @@ block content
           .project__tags
             span #HTML5
             span #MongoDB
+            span #JavaScript
   footer#contact.footer.is-flex
-      .footer__contact.is-flex.center-text
-        a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
-        a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
-      .footer__credit.center-text
-        p Webpage developed and designed by Chanse Taylor!
+    .footer__contact.is-flex.center-text
+      a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
+      a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
+    .footer__credit.center-text
+      p Webpage developed and designed by Chanse Taylor!

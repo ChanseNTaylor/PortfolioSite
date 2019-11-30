@@ -58,23 +58,24 @@ $secondary-font-color: #8a8a8a;
     &__title
     {
         margin: 0 0.25rem;
-        font-size: 1.125rem;
+        font-size: 1.15rem;
         color: $primary-font-color;
     }
     &__body
     {
         padding: 0.25rem 0.75rem;
         margin: 0.25rem 0.75rem 0;
+
+        &-title
+        {
+            padding-bottom: 0.25rem;
+        }
     }
     &__date
     {
         align-self: center;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         color: $secondary-font-color;
-    }
-    &__job-title
-    {
-        flex: 1 1 auto;
     }
 
     padding: 0.25rem;
@@ -108,4 +109,8 @@ $secondary-font-color: #8a8a8a;
 .is-normal-weight
 {
     font-weight: normal;
+}
+.indent
+{
+    text-indent: 2rem;
 }

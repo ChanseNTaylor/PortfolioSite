@@ -72,10 +72,15 @@ $project-background-color: #4f1d4c;
     {
         padding: 1rem 1rem 2.5rem;
 
-        &--about
+        &--main
         {
             height: 90vh;
             padding: 0;
+        }
+
+        &--about
+        {
+            height: 45vh;
         }
     }
 
@@ -167,8 +172,8 @@ $project-background-color: #4f1d4c;
     $footer-background-color: #2f2931;
     $footer-secondary-font-color: #676568;
 
-    padding: 5rem;
     align-items: center;
+    padding: 5rem 2.5rem;
     color: $primary-font-color;
     justify-content: space-between;
     background-color: $footer-background-color;
