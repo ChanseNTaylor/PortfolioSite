@@ -1,3 +1,9 @@
 [submodule "views/externals/adventure-game"]
 	path = views/externals/adventure-game
 	url = https://github.com/ChanseNTaylor/Adventure-Game.git
+[submodule "views/externals/randomstringgenerator"]
+	path = views/externals/randomstringgenerator
+	url = https://github.com/ChanseNTaylor/randomstringgenerator.git
+[submodule "views/externals/callNotes"]
+	path = views/externals/callNotes
+	url = https://github.com/ChanseNTaylor/NoteTakingApp.git
