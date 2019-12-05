@@ -14,9 +14,13 @@ $project-background-color: #4f1d4c;
 .bg
 {
     z-index: -1;
-    width: 100vw;
-    height: auto;
     position: absolute;
+
+    &__image
+    {
+        width: 100vw;
+        height: auto;
+    }
 }
 
 .navbar
