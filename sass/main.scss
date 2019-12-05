@@ -1,8 +1,27 @@
+// Fonts
+@font-face
+{
+    font-family: 'myfont';
+    src: url('/fonts/oswald/Oswald-VariableFont_wght.ttf');
+}
+
 // Variables
 $primary-font-color: white;
 $primary-background-color: #732f8c;
 
 $project-background-color: #4f1d4c;
+
+.bg
+{
+    z-index: -1;
+    position: absolute;
+
+    &__image
+    {
+        width: 100vw;
+        height: auto;
+    }
+}
 
 .navbar
 {
@@ -14,9 +33,9 @@ $project-background-color: #4f1d4c;
         color: $primary-font-color;
     }
 
-    padding: 0.75rem;
+    padding: 0.5rem;
+    font-family: 'myfont';
     justify-content: space-between;
-    transition: border-bottom 100ms linear;
     background-color: $primary-background-color;
 
     &__list-item
@@ -28,27 +47,25 @@ $project-background-color: #4f1d4c;
             @include navbar-item;
 
             border-radius: 0.5rem;
-            transition: background-color 200ms;
-            border: thin solid $primary-font-color;
+            color: $primary-background-color;
+            background-color: $primary-font-color;
 
             &:hover
             {
-                color: $primary-background-color;
-                background-color: $primary-font-color;
+                background-color: #E7EF69;
             }
         }
 
         &:hover
         {
-            padding: 1rem 0.75rem;
-            transition: border-bottom 100ms ease-in;
+            padding: 1.25rem 0.75rem 0.5rem;
             border-bottom: 0.25rem solid $primary-font-color;
         }
+    }
 
-        &:visited
-        {
-            color: $primary-font-color;
-        }
+    &__icon
+    {
+        margin: 0 0.5rem;
     }
 }
 
@@ -93,6 +110,7 @@ $project-background-color: #4f1d4c;
     {
         width: 100%;
         opacity: 70%;
+        align-self: center;
         object-fit: contain;
         border-radius: 0.35rem;
         transition: opacity 250ms;
@@ -203,14 +221,30 @@ $project-background-color: #4f1d4c;
 .center
 {
     margin: 0 auto;
-}
-.center-text
-{
-    text-align: center;
+
+    &-text
+    {
+        text-align: center;
+    }
 }
 .is-flex
 {
     display: flex;
+}
+.rule
+{
+    height: 0;
+    color: white;
+    flex: 1 1 auto;
+    align-self: center;
+
+    &--short
+    {
+        height: 0;
+        color: white;
+        flex: 0.025 1 auto;
+        align-self: center;
+    }
 }
 
 // Media Queries
