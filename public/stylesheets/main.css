@@ -1,7 +1,17 @@
+@font-face {
+  font-family: 'myfont';
+  src: url("/fonts/oswald/Oswald-VariableFont_wght.ttf"); }
+
+.bg {
+  z-index: -1;
+  width: 100vw;
+  height: auto;
+  position: absolute; }
+
 .navbar {
-  padding: 0.75rem;
+  padding: 0.5rem;
+  font-family: 'myfont';
   justify-content: space-between;
-  transition: border-bottom 100ms linear;
   background-color: #732f8c; }
   .navbar__list-item {
     margin: 0 0.5rem;
@@ -14,17 +24,15 @@
       padding: 1.25rem 0.75rem;
       color: white;
       border-radius: 0.5rem;
-      transition: background-color 200ms;
-      border: thin solid white; }
+      color: #732f8c;
+      background-color: white; }
       .navbar__list-item--special:hover {
-        color: #732f8c;
-        background-color: white; }
+        background-color: #E7EF69; }
     .navbar__list-item:hover {
-      padding: 1rem 0.75rem;
-      transition: border-bottom 100ms ease-in;
+      padding: 1.25rem 0.75rem 0.5rem;
       border-bottom: 0.25rem solid white; }
-    .navbar__list-item:visited {
-      color: white; }
+  .navbar__icon {
+    margin: 0 0.5rem; }
 
 .content {
   min-height: 100vh;
@@ -46,6 +54,7 @@
   .content__image {
     width: 100%;
     opacity: 70%;
+    align-self: center;
     object-fit: contain;
     border-radius: 0.35rem;
     transition: opacity 250ms;
@@ -108,12 +117,22 @@
 
 .center {
   margin: 0 auto; }
-
-.center-text {
-  text-align: center; }
+  .center-text {
+    text-align: center; }
 
 .is-flex {
   display: flex; }
+
+.rule {
+  height: 0;
+  color: white;
+  flex: 1 1 auto;
+  align-self: center; }
+  .rule--short {
+    height: 0;
+    color: white;
+    flex: 0.025 1 auto;
+    align-self: center; }
 
 @media only screen and (min-width: 1400px) {
   .project {
