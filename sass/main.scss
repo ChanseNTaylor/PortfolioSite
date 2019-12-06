@@ -1,15 +1,15 @@
+// Variables
+$primary-font-color: white;
+$primary-background-color: #732f8c;
+
+$project-background-color: #4f1d4c;
+
 // Fonts
 @font-face
 {
     font-family: 'myfont';
     src: url('/fonts/oswald/Oswald-VariableFont_wght.ttf');
 }
-
-// Variables
-$primary-font-color: white;
-$primary-background-color: #732f8c;
-
-$project-background-color: #4f1d4c;
 
 .bg
 {
@@ -29,7 +29,7 @@ $project-background-color: #4f1d4c;
     {
         margin: 0 0.5rem;
         text-decoration: none;
-        padding: 1.25rem 0.75rem;
+        padding: 1.25rem 0.5rem;
         color: $primary-font-color;
     }
 
@@ -58,8 +58,8 @@ $project-background-color: #4f1d4c;
 
         &:hover
         {
-            padding: 1.25rem 0.75rem 0.5rem;
-            border-bottom: 0.25rem solid $primary-font-color;
+            padding-bottom: 0.5rem;
+            border-bottom: 0.125rem solid $primary-font-color;
         }
     }
 
@@ -101,6 +101,11 @@ $project-background-color: #4f1d4c;
         }
     }
 
+    &__header
+    {
+        margin: 0 0.35rem;
+    }
+
     &__header--name
     {
         font-size: 3rem;
@@ -132,10 +137,10 @@ $project-background-color: #4f1d4c;
 
 .project
 {
+    padding: 0.5rem;
     margin: 0.25rem;
     border-radius: 0.5rem;
     flex-direction: column;
-    padding: 0.5rem;
     background-color: $project-background-color;
 
     &__content

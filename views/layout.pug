@@ -1,0 +1,23 @@
+mixin tags(...items)
+  .project__tags
+    each item in items
+      span ##{item}
+
+// Thanks for visiting my website!
+doctype html
+html(lang="en-us")
+  head
+    meta(charset="utf-8")
+    title Chanse Taylor's Home Page
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body.no-margins
+    .wrapper
+      block content
+      block footer
+        footer#contact.footer.is-flex
+          .footer__contact.is-flex.center-text
+            a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
+             a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
+          .footer__credit.center-text
+          p Webpage developed and designed by Chanse Taylor!
