@@ -2,17 +2,6 @@ extends layout
 
 block content
   .bg: img.bg__image(src="")
-  header
-    nav.navbar.is-flex
-      hr.rule--short
-      img.navbar__icon(alt="Nav Icon" src="https://via.placeholder.com/50")
-      hr.rule
-      .navbar__list.no-margins.is-flex
-        a.navbar__list-item(href="/#about") ABOUT
-        a.navbar__list-item(href="/#projects") PROJECTS
-        a.navbar__list-item(href="/#contact") CONTACT
-        a.navbar__list-item--special(href="/resume") RESUMÉ
-      hr.rule--short
   // Please hire me!
   main.content
     .content__section--main.center-text.is-flex
@@ -20,17 +9,11 @@ block content
         h1.content__header--name.no-margins Hello! My name is Chanse!
         p.content__description Software developer, artist, and hardcore gamer.
     #about.content__section.content__section--about
-      .is-flex
-        hr.rule--short
-        h1.content__header About Me
-        hr.rule
+      +sectionHeader("About Me")
       p.content__description I'm Chanse, a software developer with lots of different interests. I enjoy most anything that gives me the opportunity to express myself creatively. I enjoy drawing, design, and sometimes writing. Basically, I love to create things for people to use and see.
       p.content__description Not only do I love art and design, but I also have a passion for web development. As it also allows me to create, design, and share. I love developing for the web because it's easy to share the software that I create with many people around the world.
     #projects.content__section
-      .is-flex
-        hr.rule--short
-        h1.content__header Projects
-        hr.rule
+      +sectionHeader("Projects")
       .content__image-container.is-flex.center
         //- Project 1
         .project.is-flex

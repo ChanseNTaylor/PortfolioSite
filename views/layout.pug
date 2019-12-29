@@ -3,6 +3,12 @@ mixin tags(...items)
     each item in items
       span ##{item}
 
+mixin sectionHeader(text)
+  .is-flex
+    hr.rule--short
+    h1.content__header #{text}
+    hr.rule
+
 // Thanks for visiting my website!
 doctype html
 html(lang="en-us")
@@ -13,11 +19,22 @@ html(lang="en-us")
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body.no-margins
     .wrapper
+      header
+        nav.navbar.is-flex
+          hr.rule--short
+          img.navbar__icon(alt="Nav Icon" src="https://via.placeholder.com/50")
+          hr.rule
+          .navbar__list.no-margins.is-flex
+            a.navbar__list-item(href="/#about") ABOUT
+            a.navbar__list-item(href="/#projects") PROJECTS
+            a.navbar__list-item(href="/#contact") CONTACT
+            a.navbar__list-item--special(href="/resume") RESUMÉ
+          hr.rule--short
       block content
       block footer
         footer#contact.footer.is-flex
+          .footer__credit.center-text
+            p Webpage developed and designed by Chanse Taylor!
           .footer__contact.is-flex.center-text
             a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
-             a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
-          .footer__credit.center-text
-          p Webpage developed and designed by Chanse Taylor!
+            a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
