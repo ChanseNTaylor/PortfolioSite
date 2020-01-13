@@ -11,16 +11,28 @@ $project-background-color: #4f1d4c;
     src: url('/fonts/oswald/Oswald-VariableFont_wght.ttf');
 }
 
+// Main
+*
+{
+    box-sizing: border-box;
+}
+
 .bg
 {
+    width: 100%;
     z-index: -1;
     position: absolute;
 
     &__image
     {
-        width: 100vw;
-        height: auto;
+        width: 100%;
     }
+}
+
+.header
+{
+    width: 100%;
+    position: absolute;
 }
 
 .navbar
@@ -33,10 +45,10 @@ $project-background-color: #4f1d4c;
         color: $primary-font-color;
     }
 
-    padding: 0.5rem;
+    width: 99%;
     font-family: 'myfont';
+    padding: 0.5rem 0.25rem;
     justify-content: space-between;
-    background-color: $primary-background-color;
 
     &__list-item
     {
@@ -47,12 +59,12 @@ $project-background-color: #4f1d4c;
             @include navbar-item;
 
             border-radius: 0.5rem;
-            color: $primary-background-color;
-            background-color: $primary-font-color;
+            border: 1px solid $primary-font-color;
 
             &:hover
             {
-                background-color: #E7EF69;
+                color: $primary-background-color;
+                background-color: $primary-font-color;
             }
         }
 
@@ -71,9 +83,7 @@ $project-background-color: #4f1d4c;
 
 .content
 {
-    min-height: 100vh;
     color: $primary-font-color;
-    background-color: $primary-background-color;
 
     &__container
     {
@@ -87,7 +97,8 @@ $project-background-color: #4f1d4c;
 
     &__section
     {
-        padding: 1rem 1rem 2.5rem;
+        padding: 0.5rem 1rem 2.5rem;
+        background-color: $primary-background-color;
 
         &--main
         {
@@ -108,7 +119,8 @@ $project-background-color: #4f1d4c;
 
     &__header--name
     {
-        font-size: 3rem;
+        font-size: 5rem;
+        text-align: left;
     }
 
     &__image
@@ -208,8 +220,34 @@ $project-background-color: #4f1d4c;
 
     &__link
     {
+        font-weight: bold;
         margin: 0 0.35rem;
+        text-decoration: none;
+        transform: translateY(0);
         color: $primary-font-color;
+        
+        &:hover::after
+        {
+            top: 110%;
+            opacity: 1;
+            height: 2px;
+            border-radius: 3px;
+            transform: translateY(0);
+        }
+
+        &::after
+        {
+            left: 0;
+            top: 100%;
+            opacity: 0;
+            height: 1px;
+            content: '';
+            width: 100%;
+            position: absolute;
+            transform: translateY(-5px);
+            background: $primary-font-color;
+            transition: all 0.2s ease-in-out;
+        }
     }
 
     &__credit
@@ -231,6 +269,10 @@ $project-background-color: #4f1d4c;
     {
         text-align: center;
     }
+}
+.left-text
+{
+    text-align: left;
 }
 .is-flex
 {
@@ -258,5 +300,19 @@ $project-background-color: #4f1d4c;
     .project
     {
         width: 45vw;
+    }
+
+    .content
+    {
+        &__section
+        {
+            padding: 0.5rem 1rem 2.5rem;
+            background-color: $primary-background-color;
+
+            &--main
+            {
+                height: 850px;
+            }
+        }
     }
 }
