@@ -20,14 +20,14 @@ html(lang="en-us")
   body.no-margins
     .wrapper
       header.header
-        nav.navbar.is-flex.center
+        nav.navbar.is-flex
           hr.rule--short
           img.navbar__icon(alt="Nav Icon" src="https://via.placeholder.com/50")
           hr.rule
           .navbar__list.no-margins.is-flex
-            a.navbar__list-item(href="/#about") ABOUT
-            a.navbar__list-item(href="/#projects") PROJECTS
-            a.navbar__list-item(href="/#contact") CONTACT
+            a.navbar__list-item.link(href="/#about") ABOUT
+            a.navbar__list-item.link(href="/#projects") PROJECTS
+            a.navbar__list-item.link(href="/#contact") CONTACT
             a.navbar__list-item--special(href="/resume") RESUMÉ
           hr.rule--short
       block content
@@ -36,5 +36,5 @@ html(lang="en-us")
           .footer__credit.center-text
             p Webpage developed and designed by Chanse Taylor!
           .footer__contact.is-flex.center-text
-            a.footer__link(href="https://github.com/ChanseNTaylor") GITHUB
-            a.footer__link(href="mailto:chansen.taylor@gmail.com") EMAIL
+            a.footer__link.link(href="https://github.com/ChanseNTaylor") GITHUB
+            a.footer__link.link(href="mailto:chansen.taylor@gmail.com") EMAIL

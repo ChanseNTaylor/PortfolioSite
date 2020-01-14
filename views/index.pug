@@ -1,17 +1,19 @@
 extends layout
 
 block content
-  .bg: img.bg__image(src="https://via.placeholder.com/1200x800")
   // Please hire me!
   main.content
-    .content__section--main.is-flex
-      .content__container.center
-        span.no-margins.left-text Hello! My name is
-        h1.content__header--name.no-margins Chanse!
-        span.content__description.no-margins I'm a software developer, artist, and hardcore gamer.
+    .content__section--main.no-padding
+      .bg
+        img.bg__image(src="")
+      .is-flex.has-full-height
+        .content__container.center
+          span.no-margins Hello! My name is
+          h1.content__header--name.no-margins Chanse!
+          span.content__description.no-margins I'm a software developer, artist, and hardcore gamer.
     #about.content__section.content__section--about
       +sectionHeader("About Me")
-      p.content__description Hi! I'm Chanse Taylor! I'm a software developer in South Carolina with lots of different interests. I'm espcially passionate about software development.  I like to develop tools, scripts and software to solve problems that users run into often. Each new project gives me the opportunity to solve new problems in creative ways. In addition to solving problems, I also get the chance to express myself through the code that I write and the design of the finished software.
+      p.content__description Hi! I'm Chanse Taylor! I'm a software developer currently living in South Carolina with lots of different interests. I'm espcially passionate about software development.  I like to develop tools, scripts and software to solve problems that users run into often. Each new project gives me the opportunity to solve new problems in creative ways. In addition to solving problems, I also get the chance to express myself through the code that I write and the design of the finished software.
       p.content__description When I am not programming, I like to spend time drawing, painting, and playing video games.
     #projects.content__section
       +sectionHeader("My Projects")
