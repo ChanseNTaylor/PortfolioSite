@@ -9,6 +9,11 @@ mixin sectionHeader(text)
     h1.content__header #{text}
     hr.rule
 
+mixin navLinks(...links)
+  each link in links
+    - const url = `/#${link.toLowerCase()}`;
+    a.navbar__list-item.link(href=url) #{link.toUpperCase()}
+
 // Thanks for visiting my website!
 doctype html
 html(lang="en-us")
@@ -25,16 +30,14 @@ html(lang="en-us")
           img.navbar__icon(alt="Nav Icon" src="https://via.placeholder.com/50")
           hr.rule
           .navbar__list.no-margins.is-flex
-            a.navbar__list-item.link(href="/#about") ABOUT
-            a.navbar__list-item.link(href="/#projects") PROJECTS
-            a.navbar__list-item.link(href="/#contact") CONTACT
+            +navLinks("About", "Projects", "Contact")
             a.navbar__list-item--special(href="/resume") RESUMÉ
           hr.rule--short
       block content
       block footer
         footer#contact.footer.is-flex
-          .footer__credit.center-text
+          .footer__credit
             p Webpage developed and designed by Chanse Taylor!
-          .footer__contact.is-flex.center-text
+          .footer__contact.is-flex
             a.footer__link.link(href="https://github.com/ChanseNTaylor") GITHUB
-            a.footer__link.link(href="mailto:chansen.taylor@gmail.com") EMAIL
+            a.footer__link.link(href="mailto:chansen.taylor@gmail.com") GMAIL
