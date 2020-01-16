@@ -9,6 +9,8 @@ $secondary-font-color: #8a8a8a;
 
 .header
 {
+    padding: 0.25rem;
+    
     &__contact
     {
         align-items: end;
@@ -19,8 +21,6 @@ $secondary-font-color: #8a8a8a;
     {
         margin-top: 1.25rem 0 0;
     }
-
-    padding: 0.25rem;
 }
 
 .info
