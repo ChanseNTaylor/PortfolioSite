@@ -1,5 +1,6 @@
 // Variables
 $primary-font-color: white;
+$colrrr: #27112f;
 $primary-background-color: #732f8c;
 
 $project-background-color: #4f1d4c;
@@ -17,24 +18,23 @@ $project-background-color: #4f1d4c;
     box-sizing: border-box;
 }
 
-html
-{
-    background-color: $primary-background-color;
-}
-
 .bg__image
 {
     z-index: -1;
     width: 100%;
+    height: 100rem;
     position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/images/cave.jpg);
 }
 
 .header
 {
     width: 100%;
-    padding: 0.5rem;
     position: absolute;
     font-family: 'myfont';
+    padding: 0.5rem 0.75rem 0;
 }
 
 .background
@@ -43,9 +43,9 @@ html
 
     &__section
     {
-        width: 90%;
+        width: 92.5%;
         border-radius: 0.75rem;
-        background-color: white;
+        background-color: $primary-font-color;
     }
 }
 
@@ -54,8 +54,8 @@ html
     &__list-item
     {
         padding: 0.25rem;
+        margin: 0 0.5rem;
         align-self: center;
-        margin: 0.25rem 0.35rem;
 
         &--special
         {
@@ -80,7 +80,8 @@ html
 
     &__icon
     {
-        margin: 0.5rem;
+        align-self: center;
+        padding: 0 0.5rem;
     }
 }
 
@@ -95,6 +96,7 @@ html
 
     &__description
     {
+        color: $colrrr;
         font-size: 1.5rem;
     }
 
@@ -104,6 +106,7 @@ html
 
         &--main
         {
+            width: 100%;
             height: 500px;
         }
     }
@@ -205,6 +208,7 @@ html
     $footer-secondary-font-color: #676568;
 
     align-items: center;
+    flex-shrink: 0;
     padding: 5.5rem 2.5rem;
     color: $primary-font-color;
     justify-content: space-between;

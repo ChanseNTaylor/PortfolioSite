@@ -4,7 +4,7 @@ block content
   // Please hire me!
   main.content
     .content__section--main
-      img.bg__image(src="/images/cave.jpg")
+      .bg__image
       .is-flex.has-full-height
         .content__container.center
           span.no-margins Hello! My name is
@@ -35,12 +35,12 @@ block content
                 //- Project 2
                 .project.is-flex
                   .project__content.is-flex
-                    img.center-text.content__image(src="/images/stringGen.png")
+                    img.content__image(src="/images/stringGen.png")
                     .project__info
                       h2.project__info-title Random String Generator
-                      h4.no-margins A psuedo random string generator
-                      p This generator that makes strings that you can copy to the clipboard.
-                      p This was made because I tend to name my artwork things like "aaaa.png". This works for a while, but eventually I run into naming conflicts.
+                      h4.no-margins A psuedo-random string generator
+                      p This page makes random strings that can be copied.
+                      p This was made because I tend to name my artwork things like "aaaa.png". This works for a little while, but eventually I run into naming conflicts.
                       .info__links.is-flex
                         a.project__button(href="https://github.com/ChanseNTaylor/randomstringgenerator") GitHub
                         a.project__button(href="/generator") Live
