@@ -1,92 +1,86 @@
-mixin sectionHead(title)
-  .section__head.is-flex
-    hr.section__rule--left
-    h2.section__title #{title}
-    hr.section__rule.flex
+extends layout
 
-// Thank you for viewing my resume!
-doctype html
-html(lang="en-us")
-  head
-    meta(charset="utf-8")
-    title Chanse Taylor's Resume
-    link(rel='stylesheet', href='/stylesheets/resume.css')
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-  body.no-margin
-    .wrapper
-      header.header
+block head
+  title Chanse Taylor's Resume
+  link(rel='stylesheet', href='/stylesheets/resume.css')
+  
+block header
+  .is-flex
+    .header__info.flex
+      h1.no-margin.info__name Chanse Taylor
+      h3.no-margin.info__job-title Software Developer
+    .header__contact.is-flex
+      span (803) 450-3804
+      a(href="http://chansetaylor.com") ChanseTaylor.com
+      a(href="mailto:Chansen.taylor@gmail.com") Chansen.taylor@gmail.com
+      a(href="https://github.com/ChanseNTaylor") GitHub.com/ChanseNTaylor
+  p.header__description.center-text A self-motivated and creative software developer who loves using computers to solve problems.
+
+block content
+  main
+    section.section
+      +sectionHead('Technical Skills')
+      .section__body
+        p.is-strong.no-margin.section__body-title Technologies
+        span.indent.is-block HTML5/Pug, CSS3/SASS, JavaScript, C#, Node, MongoDB, and SQL.
+        p.is-strong.no-margin.section__body-title Libraries and Frameworks
+        span.indent.is-block Phaser 3, jQuery, Vue, and Bulma.
+        p.is-strong.no-margin.section__body-title Other Tools
+        span.indent.is-block Photo editing software, Git, Sublime Text 3, and NPM.
+    section.section
+      +sectionHead('Projects')
+      .section__body
+        p.is-strong.no-margin Call Notes App
+        ul.no-margin
+          li Uses HTML5, Bulma CSS framework, and Vue.js.
+          li Developed a web page to help myself and my coworkers keep track of call notes.
+        p.is-strong.no-margin Adventure Game
+        ul.no-margin
+          li Uses HTML5, CSS3, and JavaScript.
+          li A small text-based game similar to Zork built to practice design patterns and object-oriented programming in JavaScript.
+        p.is-strong.no-margin Dragon Warrior Monsters Monster Guide
+        ul.no-margin
+          li Uses Pug/Jade, MongoDB, SASS/CSS, and node.js with express.
+          li A website that provides information about characters from the video game Dragon Warrior Monsters.
+        p.is-strong.no-margin Untitled Drawing Application
+        ul.no-margin
+          li Uses Pug/Jade, Bulma CSS framework, and node.js with express
+          li A website that allows artists to draw and share their works with other users.
+    section.section
+      +sectionHead('Work Experience')
+      .section__body
         .is-flex
-          .header__info.flex
-            h1.no-margin.info__name Chanse Taylor
-            h3.no-margin.info__job-title Software Developer
-          .header__contact.is-flex
-            span (803) 450-3804
-            a(href="http://chansetaylor.com") ChanseTaylor.com
-            a(href="mailto:Chansen.taylor@gmail.com") Chansen.taylor@gmail.com
-            a(href="https://github.com/ChanseNTaylor") GitHub.com/ChanseNTaylor
-        p.header__description.center-text A self-motivated and creative software developer who loves using computers to solve problems.
-      main
-        section.section
-          +sectionHead('Technical Skills')
-          .section__body
-            p.is-strong.no-margin.section__body-title Technologies
-            span.indent.is-block HTML5/Pug, CSS3/SASS, JavaScript, C#, Python, Node, MongoDB, and SQL.
-            p.is-strong.no-margin.section__body-title Libraries and Frameworks
-            span.indent.is-block Phaser 3, jQuery, Vue, and Bulma.
-            p.is-strong.no-margin.section__body-title Other Tools
-            span.indent.is-block Photo editing software, Git, Sublime Text 3, and NPM.
-        section.section
-          +sectionHead('Projects')
-          .section__body
-            p.is-strong.no-margin Call Notes App
-            ul.no-margin
-              li Uses HTML5, Bulma CSS framework, and Vue.js.
-              li Developed a web page to help myself and my coworkers keep track of call notes.
-            p.is-strong.no-margin Adventure Game
-            ul.no-margin
-              li Uses HTML5, CSS3, and JavaScript.
-              li A small text-based game similar to Zork built to practice design patterns and object-oriented programming in JavaScript.
-            p.is-strong.no-margin Dragon Warrior Monsters Monster Guide
-            ul.no-margin
-              li Uses Pug/Jade, MongoDB, SASS/CSS, and node.js with express.
-              li A website that provides information about characters from the video game Dragon Warrior Monsters.
-            p.is-strong.no-margin Untitled Drawing Application
-            ul.no-margin
-              li Uses Pug/Jade, Bulma CSS framework, and node.js with express
-              li A website that allows artists to draw and share their works with other users.
-        section.section
-          +sectionHead('Work Experience')
-          .section__body
-            .is-flex
-              h4.flex.no-margin Technical Support Advisor:
-                span.is-normal-weight  Unisys
-              span.section__date (2018 - present)
-            ul.no-margin
-              li Implemented best practices for effective communication with clients.
-              li Applied strong problem solving skills while working with clients to resolve various technical issues.
-              li Wrote scripts to automate repetitive call documenting tasks.
-        section.section
-          +sectionHead('Education')
-          .section__body
-            .is-flex
-              h4.no-margin.flex Bachelor's degree in Math/Computer Science
-              span.section__date (Completed in 2019)
-            span University of South Carolina Aiken
-        section.section
-          +sectionHead('References')
-          .section__body.is-flex
-            .flex.section__reference
-              h4.no-margin Catherine Brohaugh
-              span.is-block Unisys Level 2 Technical Support Advisor
-              span.is-block (828)963-0442
-              a(href="mailto:Catherine.Brohaugh@unisys.com") Catherine.Brohaugh@unisys.com
-            .flex.section__reference
-              h4.no-margin Rao Li
-              span.is-block USC Aiken Professor
-              span.is-block (803)641-3264
-              a(href="mailto:RaoL@usca.edu") RaoL@usca.edu
-            .flex.section__reference
-              h4.no-margin Nicholas Corbin
-              span.is-block Unisys Project Manager
-              span.is-block (706)496-0054
-              a(href="mailto:Nicholas.Corbin@unisys.com") Nicholas.Corbin@unisys.com
+          h4.flex.no-margin Technical Support Advisor:
+            span.is-normal-weight  Unisys
+          span.section__date (2018 - present)
+        ul.no-margin
+          li Implemented best practices for effective communication with clients.
+          li Applied strong problem solving skills while working with clients to resolve various technical issues.
+          li Wrote scripts to automate repetitive call documenting tasks.
+    section.section
+      +sectionHead('Education')
+      .section__body
+        .is-flex
+          h4.no-margin.flex Bachelor's degree in Math/Computer Science
+          span.section__date (Completed in 2019)
+        span University of South Carolina Aiken
+    section.section
+      +sectionHead('References')
+      .section__body.is-flex
+        .flex.section__reference
+          h4.no-margin Catherine Brohaugh
+          span.is-block Unisys Level 2 Technical Support Advisor
+          span.is-block (828) 963-0442
+          a(href="mailto:Catherine.Brohaugh@unisys.com") Catherine.Brohaugh@unisys.com
+        .flex.section__reference
+          h4.no-margin Rao Li
+          span.is-block USC Aiken Professor
+          span.is-block (803) 641-3264
+          a(href="mailto:RaoL@usca.edu") RaoL@usca.edu
+        .flex.section__reference
+          h4.no-margin Nicholas Corbin
+          span.is-block Unisys Project Manager
+          span.is-block (706) 496-0054
+          a(href="mailto:Nicholas.Corbin@unisys.com") Nicholas.Corbin@unisys.com
+
+block footer

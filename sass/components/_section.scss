@@ -1,0 +1,38 @@
+.section
+{
+    padding: 0.25rem;
+
+    &__rule
+    {
+        height: 0;
+        align-self: center;
+
+        &--left
+        {
+            height: 0;
+            align-self: center;
+            flex: 0.015 1 auto;
+        }
+    }
+    &__title
+    {
+        margin: 0 0.25rem;
+        font-size: 1.15rem;
+        color: $special-font-color;
+    }
+    &__body
+    {
+        margin: 0.25rem 0.75rem 0;
+
+        &-title
+        {
+            padding-bottom: 0.25rem;
+        }
+    }
+    &__date
+    {
+        align-self: center;
+        font-size: 0.9rem;
+        color: $date-font-color;
+    }
+}

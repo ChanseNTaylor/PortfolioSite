@@ -1,10 +1,10 @@
-var express = require('express');
-var router = express.Router();
+"use strict";
+const express = require('express');
+const router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next)
+router.get('/', (req, res, next) =>
 {
-    res.render("resume");
+    res.render("resume", { comment: "Thank you for viewing my resume!" });
 });
 
 module.exports = router;

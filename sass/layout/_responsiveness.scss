@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1400px)
+{
+    .project
+    {
+        width: 41vw;
+    }
+
+    .content
+    {
+        &__section
+        {
+            &--main
+            {
+                padding: 0;
+                height: 550px;
+            }
+        }
+    }
+}

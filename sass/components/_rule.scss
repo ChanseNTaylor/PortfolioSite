@@ -1,0 +1,13 @@
+.rule
+{
+    height: 0;
+    color: white;
+    flex: 1 1 auto;
+    align-self: center;
+
+    &--short
+    {
+        @extend .rule;
+        flex: 0.025 1 auto;
+    }
+}

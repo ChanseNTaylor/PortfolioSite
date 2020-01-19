@@ -1,0 +1,29 @@
+.link
+{
+    text-decoration: none;
+    transform: translateY(0);
+    color: $primary-font-color;
+
+    &:hover::after
+    {
+        top: 110%;
+        opacity: 1;
+        height: 2px;
+        border-radius: 3px;
+        transform: translateY(0);
+    }
+
+    &::after
+    {
+        left: 0;
+        top: 100%;
+        opacity: 0;
+        height: 1px;
+        content: '';
+        width: 100%;
+        position: absolute;
+        transform: translateY(-5px);
+        background: $primary-background-color;
+        transition: all 0.2s ease-in-out;
+    }
+}

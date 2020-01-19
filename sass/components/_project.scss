@@ -1,0 +1,54 @@
+.project
+{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    background-color: $project-background-color;
+
+    &__content
+    {
+        flex: 1 1 auto;
+    }
+
+    &__info
+    {
+        flex-direction: column;
+
+        &-title
+        {
+            margin: 0.125rem;
+        }
+    }
+
+    &__button
+    {
+        color: white;
+        margin: 0 0.35rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        border: 1px solid white;
+        transition: background-color 200ms;
+
+        &:hover
+        {
+            color: $primary-background-color;
+            background-color: $primary-font-color;
+        }
+    }
+
+    &__tags
+    {
+        height: 2rem;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        background-color: #351033;
+
+        span
+        {
+            margin: 0.15rem;
+            vertical-align: -moz-middle-with-baseline;
+        }
+    }
+}

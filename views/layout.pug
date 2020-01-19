@@ -8,30 +8,29 @@ mixin sectionHeader(text)
     hr.rule--short
     h1.content__header #{text}
     hr.rule
+    
+mixin sectionHead(title)
+  .section__head.is-flex
+    hr.section__rule--left
+    h2.section__title #{title}
+    hr.section__rule.flex
 
 mixin navLinks(...links)
   each link in links
     a.navbar__list-item.link(href="#" + link.toLowerCase()) #{link}
   a.navbar__list-item--special(href="/resume") RESUMÉ
 
-// Thanks for visiting my website!
+<!-- #{comment} -->
 doctype html
 html(lang="en-us")
   head
     meta(charset="utf-8")
-    title Chanse Taylor's Home Page
-    link(rel='stylesheet', href='/stylesheets/main.css')
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-  body.no-margins
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    block head
+  body
     .wrapper
       header.header
-        nav.navbar.is-flex
-          hr.rule--short
-          img.navbar__icon(alt="Nav Icon" src="/images/cloud.png")
-          hr.rule
-          .navbar__list.no-margins.is-flex
-            +navLinks("About", "Projects", "Contact")
-          hr.rule--short
+        block header
       block content
       block footer
         footer#contact.footer.is-flex

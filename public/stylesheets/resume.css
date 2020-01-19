@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'myfont';
+  src: url("/fonts/oswald/Oswald-VariableFont_wght.ttf"); }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.background {
+  background-color: #732f8c; }
+
+.no-margin {
+  margin: 0; }
+
+.no-padding {
+  padding: 0; }
+
+.has-full-height {
+  height: 100%; }
+
+.center {
+  margin: 0 auto; }
+  .center-text {
+    text-align: center; }
+
+.is-flex {
+  display: flex; }
+
+.flex {
+  flex: 1 1 auto; }
+
+.is-block {
+  display: block; }
+
+.is-strong {
+  font-weight: bold; }
+
+.is-normal-weight {
+  font-weight: normal; }
+
+.indent {
+  text-indent: 1rem; }
+
 .wrapper {
   padding: 0.5rem; }
 
@@ -11,10 +59,11 @@
     margin-top: 1.25rem 0 0; }
 
 .info__name {
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: #7e077e; }
 
 .info__job-title {
+  font-size: 1.5rem;
   color: #8a8a8a; }
 
 .section {
@@ -24,45 +73,17 @@
     align-self: center; }
     .section__rule--left {
       height: 0;
-      flex: 0.015 1 auto;
-      align-self: center; }
+      align-self: center;
+      flex: 0.015 1 auto; }
   .section__title {
     margin: 0 0.25rem;
     font-size: 1.15rem;
     color: #7e077e; }
   .section__body {
-    padding: 0.25rem 0.75rem;
     margin: 0.25rem 0.75rem 0; }
     .section__body-title {
       padding-bottom: 0.25rem; }
   .section__date {
     align-self: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #8a8a8a; }
-  .section__reference {
-    font-size: 0.85rem;
-    margin-right: 0.5rem; }
-
-.no-margin {
-  margin: 0; }
-
-.flex {
-  flex: 1 1 auto; }
-
-.is-flex {
-  display: flex; }
-
-.is-block {
-  display: block; }
-
-.center-text {
-  text-align: center; }
-
-.is-strong {
-  font-weight: bold; }
-
-.is-normal-weight {
-  font-weight: normal; }
-
-.indent {
-  text-indent: 1rem; }

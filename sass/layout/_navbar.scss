@@ -1,0 +1,35 @@
+.navbar
+{
+    &__list-item
+    {
+        padding: 0.25rem;
+        margin: 0 0.5rem;
+        align-self: center;
+
+        &--special
+        {
+            @extend .navbar__list-item;
+
+            text-decoration: none;
+            border-radius: 0.5rem;
+            padding: 1.25rem 0.75rem;
+            color: $primary-font-color;
+            transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0);
+            border: 1px solid $primary-font-color;
+
+            &:hover
+            {
+                color: $primary-font-color;
+                background: $primary-background-color;
+                border: 1px solid $primary-background-color;
+            }
+        }
+    }
+
+    &__icon
+    {
+        align-self: center;
+        padding: 0 0.5rem;
+    }
+}

@@ -2,51 +2,79 @@
   font-family: 'myfont';
   src: url("/fonts/oswald/Oswald-VariableFont_wght.ttf"); }
 
-* {
+html {
   box-sizing: border-box; }
 
-.bg__image {
-  z-index: -1;
-  width: 100%;
-  height: 100rem;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-image: url(/images/cave.jpg); }
+body {
+  margin: 0; }
 
-.header {
-  width: 100%;
-  position: absolute;
-  font-family: 'myfont';
-  padding: 0.5rem 0.75rem 0; }
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 .background {
-  padding: 0.5rem; }
-  .background__section {
-    width: 92.5%;
-    border-radius: 0.75rem;
-    background-color: white; }
+  background-color: #732f8c; }
 
-.navbar__list-item, .navbar__list-item--special {
-  padding: 0.25rem;
-  margin: 0 0.5rem;
+.no-margin {
+  margin: 0; }
+
+.no-padding {
+  padding: 0; }
+
+.has-full-height {
+  height: 100%; }
+
+.center {
+  margin: 0 auto; }
+  .center-text {
+    text-align: center; }
+
+.is-flex {
+  display: flex; }
+
+.flex {
+  flex: 1 1 auto; }
+
+.is-block {
+  display: block; }
+
+.is-strong {
+  font-weight: bold; }
+
+.is-normal-weight {
+  font-weight: normal; }
+
+.indent {
+  text-indent: 1rem; }
+
+.link {
+  text-decoration: none;
+  transform: translateY(0);
+  color: white; }
+  .link:hover::after {
+    top: 110%;
+    opacity: 1;
+    height: 2px;
+    border-radius: 3px;
+    transform: translateY(0); }
+  .link::after {
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    height: 1px;
+    content: '';
+    width: 100%;
+    position: absolute;
+    transform: translateY(-5px);
+    background: #732f8c;
+    transition: all 0.2s ease-in-out; }
+
+.rule, .rule--short {
+  height: 0;
+  color: white;
+  flex: 1 1 auto;
   align-self: center; }
-  .navbar__list-item--special {
-    text-decoration: none;
-    border-radius: 0.5rem;
-    padding: 1.25rem 0.75rem;
-    color: white;
-    transition: all 0.3s ease-in-out;
-    background: rgba(255, 255, 255, 0);
-    border: 1px solid white; }
-    .navbar__list-item--special:hover {
-      color: white;
-      background: #732f8c;
-      border: 1px solid #732f8c; }
-
-.navbar__icon {
-  align-self: center;
-  padding: 0 0.5rem; }
+  .rule--short {
+    flex: 0.025 1 auto; }
 
 .content {
   color: white; }
@@ -114,8 +142,8 @@
       vertical-align: -moz-middle-with-baseline; }
 
 .footer {
-  align-items: center;
   flex-shrink: 0;
+  align-items: center;
   padding: 5.5rem 2.5rem;
   color: white;
   justify-content: space-between;
@@ -126,55 +154,32 @@
   .footer__credit {
     color: #676568; }
 
-.background {
-  background-color: #732f8c; }
+.header {
+  width: 100%;
+  position: absolute;
+  font-family: 'myfont';
+  padding: 0.5rem 0.75rem 0; }
 
-.no-margins {
-  margin: 0; }
-
-.no-padding {
-  padding: 0; }
-
-.has-full-height {
-  height: 100%; }
-
-.center {
-  margin: 0 auto; }
-  .center-text {
-    text-align: center; }
-
-.is-flex {
-  display: flex; }
-
-.rule, .rule--short {
-  height: 0;
-  color: white;
-  flex: 1 1 auto;
+.navbar__list-item, .navbar__list-item--special {
+  padding: 0.25rem;
+  margin: 0 0.5rem;
   align-self: center; }
-  .rule--short {
-    flex: 0.025 1 auto; }
+  .navbar__list-item--special {
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 1.25rem 0.75rem;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid white; }
+    .navbar__list-item--special:hover {
+      color: white;
+      background: #732f8c;
+      border: 1px solid #732f8c; }
 
-.link {
-  text-decoration: none;
-  transform: translateY(0);
-  color: white; }
-  .link:hover::after {
-    top: 110%;
-    opacity: 1;
-    height: 2px;
-    border-radius: 3px;
-    transform: translateY(0); }
-  .link::after {
-    left: 0;
-    top: 100%;
-    opacity: 0;
-    height: 1px;
-    content: '';
-    width: 100%;
-    position: absolute;
-    transform: translateY(-5px);
-    background: #732f8c;
-    transition: all 0.2s ease-in-out; }
+.navbar__icon {
+  align-self: center;
+  padding: 0 0.5rem; }
 
 @media only screen and (min-width: 1400px) {
   .project {
@@ -182,3 +187,19 @@
   .content__section--main {
     padding: 0;
     height: 550px; } }
+
+.bg__image {
+  z-index: -1;
+  width: 100%;
+  height: 100rem;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/cave.jpg); }
+
+.background {
+  padding: 0.5rem; }
+  .background__section {
+    width: 92.5%;
+    border-radius: 0.75rem;
+    background-color: white; }
