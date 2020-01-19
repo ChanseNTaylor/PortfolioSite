@@ -7,13 +7,17 @@ block head
 block header
   .is-flex
     .header__info.flex
-      h1.no-margin.info__name Chanse Taylor
-      h3.no-margin.info__job-title Software Developer
+      h1.info__name Chanse Taylor
+      h3.info__job-title Software Developer
     .header__contact.is-flex
       span (803) 450-3804
+        img(src="images/icons/resumeinternet.png")
       a(href="http://chansetaylor.com") ChanseTaylor.com
+        img(src="images/icons/resumephone2.png")
       a(href="mailto:Chansen.taylor@gmail.com") Chansen.taylor@gmail.com
+        img(src="images/icons/resumeemail.png")
       a(href="https://github.com/ChanseNTaylor") GitHub.com/ChanseNTaylor
+        img(src="images/icons/resumegithub.png")
   p.header__description.center-text A self-motivated and creative software developer who loves using computers to solve problems.
 
 block content
@@ -31,29 +35,29 @@ block content
       +sectionHead('Projects')
       .section__body
         p.is-strong.no-margin Call Notes App
-        ul.no-margin
-          li Uses HTML5, Bulma CSS framework, and Vue.js.
-          li Developed a web page to help myself and my coworkers keep track of call notes.
+        ul
+          li Developed using HTML5, the Bulma CSS framework, and Vue.js.
+          li This web page stores information from help desk calls.
         p.is-strong.no-margin Adventure Game
-        ul.no-margin
-          li Uses HTML5, CSS3, and JavaScript.
-          li A small text-based game similar to Zork built to practice design patterns and object-oriented programming in JavaScript.
+        ul
+          li Developed with HTML5, CSS3, and pure JavaScript.
+          li A small, text-based game that I built to practice design patterns and object-oriented programming.
         p.is-strong.no-margin Dragon Warrior Monsters Monster Guide
-        ul.no-margin
+        ul
           li Uses Pug/Jade, MongoDB, SASS/CSS, and node.js with express.
           li A website that provides information about characters from the video game Dragon Warrior Monsters.
         p.is-strong.no-margin Untitled Drawing Application
-        ul.no-margin
+        ul
           li Uses Pug/Jade, Bulma CSS framework, and node.js with express
           li A website that allows artists to draw and share their works with other users.
     section.section
       +sectionHead('Work Experience')
       .section__body
         .is-flex
-          h4.flex.no-margin Technical Support Advisor:
+          h4.flex Technical Support Advisor:
             span.is-normal-weight  Unisys
           span.section__date (2018 - present)
-        ul.no-margin
+        ul
           li Implemented best practices for effective communication with clients.
           li Applied strong problem solving skills while working with clients to resolve various technical issues.
           li Wrote scripts to automate repetitive call documenting tasks.
@@ -61,24 +65,24 @@ block content
       +sectionHead('Education')
       .section__body
         .is-flex
-          h4.no-margin.flex Bachelor's degree in Math/Computer Science
+          h4.flex Bachelor's degree in Math/Computer Science
           span.section__date (Completed in 2019)
         span University of South Carolina Aiken
     section.section
       +sectionHead('References')
       .section__body.is-flex
         .flex.section__reference
-          h4.no-margin Catherine Brohaugh
+          h4 Catherine Brohaugh
           span.is-block Unisys Level 2 Technical Support Advisor
           span.is-block (828) 963-0442
           a(href="mailto:Catherine.Brohaugh@unisys.com") Catherine.Brohaugh@unisys.com
         .flex.section__reference
-          h4.no-margin Rao Li
+          h4 Rao Li
           span.is-block USC Aiken Professor
           span.is-block (803) 641-3264
           a(href="mailto:RaoL@usca.edu") RaoL@usca.edu
         .flex.section__reference
-          h4.no-margin Nicholas Corbin
+          h4 Nicholas Corbin
           span.is-block Unisys Project Manager
           span.is-block (706) 496-0054
           a(href="mailto:Nicholas.Corbin@unisys.com") Nicholas.Corbin@unisys.com

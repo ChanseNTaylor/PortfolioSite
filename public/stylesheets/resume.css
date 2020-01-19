@@ -5,7 +5,7 @@
 html {
   box-sizing: border-box; }
 
-body {
+body, h1, h2, h3, h4, h5, h6, ul {
   margin: 0; }
 
 *, *:before, *:after {
@@ -16,9 +16,6 @@ body {
 
 .no-margin {
   margin: 0; }
-
-.no-padding {
-  padding: 0; }
 
 .has-full-height {
   height: 100%; }
@@ -46,26 +43,6 @@ body {
 .indent {
   text-indent: 1rem; }
 
-.wrapper {
-  padding: 0.5rem; }
-
-.header {
-  padding: 0.25rem; }
-  .header__contact {
-    align-items: end;
-    flex-direction: column;
-    justify-content: center; }
-  .header__description {
-    margin-top: 1.25rem 0 0; }
-
-.info__name {
-  font-size: 3.5rem;
-  color: #7e077e; }
-
-.info__job-title {
-  font-size: 1.5rem;
-  color: #8a8a8a; }
-
 .section {
   padding: 0.25rem; }
   .section__rule {
@@ -87,3 +64,23 @@ body {
     align-self: center;
     font-size: 0.9rem;
     color: #8a8a8a; }
+
+.wrapper {
+  padding: 0.5rem; }
+
+.header {
+  padding: 0.25rem; }
+  .header__contact {
+    align-items: end;
+    flex-direction: column;
+    justify-content: center; }
+  .header__description {
+    margin-top: 1.25rem; }
+
+.info__name {
+  font-size: 3.5rem;
+  color: #7e077e; }
+
+.info__job-title {
+  font-size: 1.75rem;
+  color: #8a8a8a; }
