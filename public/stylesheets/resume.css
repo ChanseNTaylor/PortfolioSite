@@ -84,3 +84,8 @@ body, h1, h2, h3, h4, h5, h6, ul {
 .info__job-title {
   font-size: 1.75rem;
   color: #8a8a8a; }
+
+.contact__icon {
+  width: 1.3rem;
+  vertical-align: middle;
+  margin: 0.2rem 0 0.2rem 0.5rem; }
