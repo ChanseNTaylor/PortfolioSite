@@ -1,38 +1,43 @@
 .section
 {
-    padding: 0.25rem;
+    padding: 0 0.25rem;
 
     &__rule
     {
-        height: 0;
         align-self: center;
-
-        &--left
-        {
-            height: 0;
-            align-self: center;
-            flex: 0.015 1 auto;
-        }
     }
+
     &__title
     {
-        margin: 0 0.25rem;
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         color: $special-font-color;
+        margin: 0.75rem 0.25rem 0.25rem;
     }
+
     &__body
     {
-        margin: 0.25rem 0.75rem 0;
+        margin: 0 0.45rem;
 
         &-title
         {
-            padding-bottom: 0.25rem;
+            margin: 0.5rem 0 0.5rem;
+
+            &--special
+            {
+                margin: 0.25rem 0 0;
+            }
         }
     }
+
     &__date
     {
-        align-self: center;
         font-size: 0.9rem;
+        align-self: center;
         color: $date-font-color;
+    }
+
+    &__description
+    {
+        margin: 0.5rem 0;
     }
 }
