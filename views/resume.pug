@@ -1,5 +1,8 @@
 extends layout
 
+block comment
+  // Thanks for viewing my resume!
+  
 block head
   title Chanse Taylor's Resume
   link(rel='stylesheet', href='/stylesheets/resume.css')
@@ -18,7 +21,7 @@ block header
         img.contact__icon(src="images/icons/interneticon.png")
       a(href="mailto:Chansen.taylor@gmail.com") Chansen.taylor@gmail.com
         img.contact__icon(src="images/icons/emailicon.png")
-  p.header__description.center-text A self-motivated and creative software developer who loves to solve others problems.
+  p.header__description.center-text A self-motivated and creative software developer who loves to solve other people's problems.
 
 block content
   main
@@ -43,8 +46,8 @@ block content
     section.section
       +sectionHead('Work Experience')
       .section__body
-        p.is-strong.section__body-title--special Technical Support Advisor
-          span.is-normal-weight  @ Unisys
+        p.is-strong.section__body-title--special.
+          Technical Support Advisor #[span.is-normal-weight @ Unisys]
         span.section__date (2018 - present)
         ul
           li Implements best practices for effective communication with clients.
@@ -74,5 +77,4 @@ block content
           span.is-block Unisys Project Manager
           span.is-block (706) 496-0054
           a(href="mailto:Nicholas.Corbin@unisys.com") Nicholas.Corbin@unisys.com
-
 block footer

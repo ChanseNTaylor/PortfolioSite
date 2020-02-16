@@ -14,15 +14,10 @@ $special-font-color: #7e077e;
     src: url('/fonts/oswald/Oswald-VariableFont_wght.ttf');
 }
 
-// Resets
+// Box Sizing
 html
 {
     box-sizing: border-box;
-}
-
-body, h1, h2, h3, h4, h5, h6, ul
-{
-    margin: 0;
 }
 
 *, *:before, *:after
@@ -30,14 +25,16 @@ body, h1, h2, h3, h4, h5, h6, ul
     box-sizing: inherit;
 }
 
+// Resets
+body, h1, h2, h3, h4, h5, h6, ul, hr, p
+{
+    margin: 0;
+}
+
 // Utility
 .background
 {
     background-color: $primary-background-color;
-}
-.no-margin
-{
-    margin: 0;
 }
 .has-full-height
 {

@@ -5,16 +5,14 @@ block header
     hr.rule--short
     img.navbar__icon(alt="Nav Icon" src="/images/cloud.png")
     hr.rule
-    .is-flex
-      +navLinks("About", "Projects", "Contact")
+    +navLinks("About", "Projects", "Contact")
     hr.rule--short
 
 block content
   // Please hire me!
   main.content
     .content__section--main
-      .bg__image
-      .is-flex.has-full-height
+      .bg__image.is-flex.has-full-height
         .content__container.center
           span Hello! My name is
           h1.content__header--name Chanse Taylor!
@@ -23,8 +21,12 @@ block content
       .background__section.center
         #about.content__section
           +sectionHeader("About")
-          p.content__description Hi! I'm Chanse Taylor! A software developer with a passion for the web!  I like to develop tools, scripts and software to solve problems that users run into often. Each new project gives me the opportunity to solve new problems in creative ways. In addition to solving problems, I also get the chance to express myself through the code that I write and the design of the finished software.
-          p.content__description When I am not programming, I like to spend my time drawing, painting, playing video games or watching anime.
+          p.content__description.
+            Hi! I'm Chanse Taylor! A software developer based in South Carolina with a passion for the web!  I like to develop tools, scripts and software to solve problems that users run into often. 
+            
+            Each new project gives me the opportunity to solve new problems in creative ways. In addition to solving problems, I also get the chance to express myself through the code that I write and the design of the finished software. 
+            
+            When I am not programming, I like to spend my time drawing, painting, playing video games or watching anime.
         #projects.content__section
           +sectionHeader("Projects")
           .content__image-container.is-flex.center
@@ -32,15 +34,18 @@ block content
               .project.is-flex
                 .project__content.is-flex
                   img.content__image(src="/images/textGame.png")
-                  .project__info
+                  .project__info.is-flex
                     h2.project__info-title Dragon Hunting!
                     h4 A text-based adventure game
-                    p This is a text-based adventure game (think ZORK) about a knight on a quest to slay a dragon.
-                    p This game was put together to give me a little practice with object oriented programming.
+                    p.
+                      This is a text-based adventure game (think ZORK) about a knight on a quest to slay a dragon.
+                      
+                      This game was put together to give me a little practice with object oriented programming.
                     .info__links.is-flex
                       a.project__button(href="https://github.com/ChanseNTaylor/Adventure-Game") GitHub
                       a.project__button(href="/game") Live
-                +tags("HTML5", "CSS3", "JavaScript")
+                .project__tags
+                  span #HTML5 #CSS3 #JavaScript
               //- Project 2
               .project.is-flex
                 .project__content.is-flex
@@ -53,7 +58,8 @@ block content
                     .info__links.is-flex
                       a.project__button(href="https://github.com/ChanseNTaylor/randomstringgenerator") GitHub
                       a.project__button(href="/generator") Live
-                +tags("HTML5", "CSS3", "JavaScript")
+                .project__tags
+                  span #HTML5 #CSS3 #JavaScript
               //- Project 3
               .project.is-flex
                 .project__content.is-flex
@@ -66,7 +72,8 @@ block content
                     .info__links.is-flex
                       a.project__button(href="https://github.com/ChanseNTaylor/NoteTakingApp") GitHub
                       a.project__button(href="/notes") Live
-                +tags("Vue", "Bulma", "HTML5")
+                .project__tags
+                  span #Vue #Bulma #HTML5
               //- Project 4
               .project.is-flex
                 .project__content.is-flex
@@ -78,7 +85,8 @@ block content
                     p Began work on an HTML5-based alternative to drawr.net.
                     .info__links.is-flex
                       a.project__button(href="https://github.com/ChanseNTaylor/DrawingApp") GitHub
-                +tags("Bulma", "JavaScript", "Sass", "Node", "Express", "Pug")
+                .project__tags
+                  span #Bulma #JavaScript #Sass #Node #Express #Pug
               //- Project 5
               .project.is-flex
                 .project__content.is-flex
@@ -87,4 +95,5 @@ block content
                     h2.project__info-title DWM Monster Guide
                     h4 A guide for the game Dragon Warrior Monsters
                     p Implements a database to store information about characters from the video game Dragon Warrior Monsters.
-                +tags("HTML5", "MongoDB", "JavaScript", "Sass")
+                .project__tags
+                  span #HTML5 #MongoDB #JavaScript #Sass

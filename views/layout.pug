@@ -1,8 +1,3 @@
-mixin tags(...items)
-  .project__tags
-    each item in items
-      span ##{item}
-
 mixin sectionHeader(text)
   .is-flex
     hr.rule--short
@@ -15,11 +10,13 @@ mixin sectionHead(title)
     hr.section__rule.flex
 
 mixin navLinks(...links)
-  each link in links
-    a.navbar__list-item.link(href="#" + link.toLowerCase()) #{link}
-  a.navbar__list-item--special(href="/resume") RESUMÉ
+  .is-flex
+    each link in links
+      a.navbar__list-item.link(href="#" + link.toLowerCase()) #{link}
+    a.navbar__list-item--special(href="/resume") RESUMÉ
 
-<!-- #{comment} -->
+block comment
+  <!-- Thanks for visiting my website! -->
 doctype html
 html(lang="en-us")
   head

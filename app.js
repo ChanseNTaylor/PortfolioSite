@@ -1,15 +1,11 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+"use strict";
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
-const resumeRouter = require("./routes/resume");
-
-const notesPath = "views/externals/callNotes";
-const gamePath = "views/externals/adventure-game";
-const generatorPath = "views/externals/randomstringgenerator";
 
 const app = express();
 
@@ -24,10 +20,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use("/resume", resumeRouter);
-app.use("/game", express.static(path.join(__dirname, gamePath)));
-app.use("/generator", express.static(path.join(__dirname, generatorPath)));
-app.use("/notes", express.static(path.join(__dirname, notesPath)));
+
+app.use("/notes", express.static("views/externals/callNotes"));
+app.use("/game", express.static("views/externals/adventure-game"));
+app.use("/generator", express.static("views/externals/randomstringgenerator"));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => { next(createError(404)); });
