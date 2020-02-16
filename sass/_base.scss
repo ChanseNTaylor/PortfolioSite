@@ -32,15 +32,6 @@ body, h1, h2, h3, h4, h5, h6, ul, hr, p
 }
 
 // Utility
-.center
-{
-    margin: 0 auto;
-
-    &-text
-    {
-        text-align: center;
-    }
-}
 .is-flex
 {
     display: flex;
@@ -60,8 +51,4 @@ body, h1, h2, h3, h4, h5, h6, ul, hr, p
 .is-normal-weight
 {
     font-weight: normal;
-}
-.indent
-{
-    text-indent: 1rem;
 }

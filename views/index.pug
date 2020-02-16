@@ -1,23 +1,15 @@
 extends layout
 
-block header
-  nav.navbar.is-flex
-    hr.rule--short
-    img.navbar__icon(alt="Nav Icon" src="/images/cloud.png")
-    hr.rule
-    +navLinks("About", "Projects", "Contact")
-    hr.rule--short
-
 block content
   // Please hire me!
   main.content
     .content__section--main.is-flex
-      .content__container.center
+      .content__container
         span Hello! My name is
         h1.content__header--name Chanse Taylor!
         h3.content__header--description I am a software developer, artist, and hardcore gamer.
     .background
-      .background__section.center
+      .background__section
         #about.content__section
           +sectionHeader("About")
           p.content__description.
@@ -26,12 +18,12 @@ block content
             When I am not programming, I like to spend my time drawing, painting, playing video games or watching anime.
         #projects.content__section
           +sectionHeader("Projects")
-          .content__image-container.is-flex.center
+          .content__image-container.is-flex
               //- Project 1
               .project.is-flex
                 .project__content.is-flex
                   img.content__image(src="/images/textGame.png")
-                  .project__info.is-flex
+                  .project__info
                     h2.project__info-title Dragon Hunting!
                     h4.project__info-subtitle A text-based adventure game
                     p.project__info-description.
@@ -81,7 +73,7 @@ block content
               //- Project 5
               .project.is-flex
                 .project__content.is-flex
-                  img.center-text.content__image(src="" alt="Image not available.")
+                  img.content__image(src="" alt="Image not available.")
                   .project__info
                     h2.project__info-title DWM Monster Guide
                     h4.project__info-subtitle A guide for the game Dragon Warrior Monsters

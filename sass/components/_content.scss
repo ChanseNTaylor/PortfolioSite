@@ -2,11 +2,6 @@
 {
     color: $primary-font-color;
 
-    &__container
-    {
-        align-self: center;
-    }
-
     &__description
     {
         color: $colrrr;
@@ -21,10 +16,12 @@
 
         &--main
         {
+            align-items: center;
             background-image: url(/images/cave.jpg);
             background-position: center;
             background-size: cover;
             height: 500px;
+            justify-content: center;
         }
     }
 
@@ -46,6 +43,7 @@
         border-radius: 0.35rem;
         object-fit: contain;
         opacity: 70%;
+        text-align: center;
         transition: opacity 250ms;
         width: 100%;
 

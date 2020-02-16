@@ -29,6 +29,12 @@ html(lang="en-us")
     .wrapper
       header.header
         block header
+          nav.navbar.is-flex
+            hr.rule--short
+            img.navbar__icon(alt="Nav Icon" src="/images/cloud.png")
+            hr.rule
+            +navLinks("About", "Projects", "Contact")
+            hr.rule--short
       block content
       block footer
         footer#contact.footer.is-flex
