@@ -11,12 +11,6 @@ html {
 body, h1, h2, h3, h4, h5, h6, ul, hr, p {
   margin: 0; }
 
-.background {
-  background-color: #732f8c; }
-
-.has-full-height {
-  height: 100%; }
-
 .center {
   margin: 0 auto; }
   .center-text {
@@ -80,8 +74,11 @@ body, h1, h2, h3, h4, h5, h6, ul, hr, p {
     padding: 1.5rem 3rem;
     white-space: pre-line; }
   .content__section {
-    padding: 0.5rem; }
+    padding: 0.75rem 1.25rem; }
     .content__section--main {
+      background-image: url(/images/cave.jpg);
+      background-position: center;
+      background-size: cover;
       height: 500px; }
   .content__header {
     margin: 0 0.25rem;
@@ -114,22 +111,27 @@ body, h1, h2, h3, h4, h5, h6, ul, hr, p {
   .project__info {
     flex-direction: column;
     padding: 0 0.5rem; }
+    .project__info-subtitle {
+      margin-bottom: 0.75rem; }
+    .project__info-description {
+      margin-bottom: 1rem; }
   .project__button {
-    color: white;
-    margin: 0 0.35rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
     border: 1px solid white;
-    transition: background-color 200ms; }
+    border-radius: 0.5rem;
+    color: white;
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: background-color 300ms; }
     .project__button:hover {
-      color: #732f8c;
-      background-color: white; }
+      background-color: white;
+      color: #732f8c; }
   .project__tags {
     background-color: #351033;
     border-radius: 0.5rem;
     padding: 0.25rem;
-    margin-top: 0.25rem; }
+    margin-top: 0.5rem; }
 
 .footer {
   flex-shrink: 0;
@@ -178,15 +180,10 @@ body, h1, h2, h3, h4, h5, h6, ul, hr, p {
     padding: 0;
     height: 550px; } }
 
-.bg__image {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: url(/images/cave.jpg); }
-
 .background {
+  background-color: #732f8c;
   padding: 0.5rem; }
   .background__section {
-    width: 92.5%;
+    background-color: white;
     border-radius: 0.75rem;
-    background-color: white; }
+    width: 92.5%; }

@@ -11,20 +11,17 @@ block header
 block content
   // Please hire me!
   main.content
-    .content__section--main
-      .bg__image.is-flex.has-full-height
-        .content__container.center
-          span Hello! My name is
-          h1.content__header--name Chanse Taylor!
-          h3.content__header--description I am a software developer, artist, and hardcore gamer.
+    .content__section--main.is-flex
+      .content__container.center
+        span Hello! My name is
+        h1.content__header--name Chanse Taylor!
+        h3.content__header--description I am a software developer, artist, and hardcore gamer.
     .background
       .background__section.center
         #about.content__section
           +sectionHeader("About")
           p.content__description.
-            Hi! I'm Chanse Taylor! A software developer based in South Carolina with a passion for the web!  I like to develop tools, scripts and software to solve problems that users run into often. 
-            
-            Each new project gives me the opportunity to solve new problems in creative ways. In addition to solving problems, I also get the chance to express myself through the code that I write and the design of the finished software. 
+            Hi! I'm Chanse Taylor! A software developer based in South Carolina with a passion for the web! I like to develop tools, scripts and software to solve problems that users run into often. Each new project gives me the opportunity to solve new problems in creative ways. In addition to solving problems, I also get the chance to express myself through the code that I write and the design of the finished software. 
             
             When I am not programming, I like to spend my time drawing, painting, playing video games or watching anime.
         #projects.content__section
@@ -36,64 +33,58 @@ block content
                   img.content__image(src="/images/textGame.png")
                   .project__info.is-flex
                     h2.project__info-title Dragon Hunting!
-                    h4 A text-based adventure game
-                    p.
+                    h4.project__info-subtitle A text-based adventure game
+                    p.project__info-description.
                       This is a text-based adventure game (think ZORK) about a knight on a quest to slay a dragon.
                       
                       This game was put together to give me a little practice with object oriented programming.
-                    .info__links.is-flex
-                      a.project__button(href="https://github.com/ChanseNTaylor/Adventure-Game") GitHub
-                      a.project__button(href="/game") Live
-                .project__tags
-                  span #HTML5 #CSS3 #JavaScript
+                    a.project__button(href="https://github.com/ChanseNTaylor/Adventure-Game") GitHub
+                    a.project__button(href="/game") Live
+                span.project__tags #HTML5 #CSS3 #JavaScript
               //- Project 2
               .project.is-flex
                 .project__content.is-flex
                   img.content__image(src="/images/stringGen.png")
                   .project__info
                     h2.project__info-title Random String Generator
-                    h4 A psuedo-random string generator
-                    p This page makes random strings that can be copied.
-                    p This was made because I tend to name my artwork things like "aaaa.png". This works for a little while, but eventually I run into naming conflicts.
-                    .info__links.is-flex
-                      a.project__button(href="https://github.com/ChanseNTaylor/randomstringgenerator") GitHub
-                      a.project__button(href="/generator") Live
-                .project__tags
-                  span #HTML5 #CSS3 #JavaScript
+                    h4.project__info-subtitle A psuedo-random string generator
+                    p.project__info-description.
+                      This page makes random strings that can be copied. 
+
+                      This was made because I tend to name my artwork things like "aaaa.png". This works for a little while, but eventually I run into naming conflicts.
+                    a.project__button(href="https://github.com/ChanseNTaylor/randomstringgenerator") GitHub
+                    a.project__button(href="/generator") Live
+                span.project__tags #HTML5 #CSS3 #JavaScript
               //- Project 3
               .project.is-flex
                 .project__content.is-flex
                   img.content__image(src="/images/callNotes.png")
                   .project__info
                     h2.project__info-title Call Notes App
-                    h4 A note taking app
-                    p I made this because it's hard to keep up with the notes of a single day.
-                    p I've shared this with a few coworkers and they all love it!
-                    .info__links.is-flex
-                      a.project__button(href="https://github.com/ChanseNTaylor/NoteTakingApp") GitHub
-                      a.project__button(href="/notes") Live
-                .project__tags
-                  span #Vue #Bulma #HTML5
+                    h4.project__info-subtitle A note taking app
+                    p.project__info-description.
+                      I made this because it's hard to keep up with the notes of a single day. I've shared this with a few coworkers and they all love it!
+                    a.project__button(href="https://github.com/ChanseNTaylor/NoteTakingApp") GitHub
+                    a.project__button(href="/notes") Live
+                span.project__tags #Vue #Bulma #HTML5
               //- Project 4
               .project.is-flex
                 .project__content.is-flex
                   img.content__image(src="/images/drawingApp.png")
                   .project__info
                     h2.project__info-title Untitled Drawing App
-                    h4 An art creation and publication app
-                    p This is a webapp that allows artists to create and share artwork.
-                    p Began work on an HTML5-based alternative to drawr.net.
-                    .info__links.is-flex
-                      a.project__button(href="https://github.com/ChanseNTaylor/DrawingApp") GitHub
-                .project__tags
-                  span #Bulma #JavaScript #Sass #Node #Express #Pug
+                    h4.project__info-subtitle An art creation and publication app
+                    p.project__info-description.
+                      This is a webapp that allows artists to create and share artwork. Began work on an HTML5-based alternative to drawr.net.
+                    a.project__button(href="https://github.com/ChanseNTaylor/DrawingApp") GitHub
+                span.project__tags #Bulma #JavaScript #Sass #Node #Express #Pug
               //- Project 5
               .project.is-flex
                 .project__content.is-flex
                   img.center-text.content__image(src="" alt="Image not available.")
                   .project__info
                     h2.project__info-title DWM Monster Guide
-                    h4 A guide for the game Dragon Warrior Monsters
-                    p Implements a database to store information about characters from the video game Dragon Warrior Monsters.
-                .project__tags
-                  span #HTML5 #MongoDB #JavaScript #Sass
+                    h4.project__info-subtitle A guide for the game Dragon Warrior Monsters
+                    p.project__info-description Implements a database to store information about characters from the video game Dragon Warrior Monsters.
+                    a.project__button(href="https://github.com/ChanseNTaylor/MonsterGuide") GitHub
+                span.project__tags #HTML5 #MongoDB #JavaScript #Sass

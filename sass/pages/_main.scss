@@ -1,19 +1,12 @@
-.bg__image
-{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/images/cave.jpg);
-}
-
 .background
 {
+    background-color: $primary-background-color;
     padding: 0.5rem;
 
     &__section
     {
-        width: 92.5%;
-        border-radius: 0.75rem;
         background-color: $primary-font-color;
+        border-radius: 0.75rem;
+        width: 92.5%;
     }
 }
