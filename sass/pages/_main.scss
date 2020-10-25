@@ -1,13 +1,14 @@
-.background
+.wrapper
 {
     background-color: $primary-background-color;
-    padding: 0.5rem;
-
+}
+.background
+{
     &__section
     {
         background-color: $primary-font-color;
-        border-radius: 0.75rem;
+        border-radius: 1rem;
         margin: 0 auto;
-        width: 92.5%;
+        width: 95%;
     }
 }

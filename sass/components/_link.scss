@@ -1,16 +1,16 @@
 .link
 {
-    text-decoration: none;
-    transform: translateY(0);
     color: $primary-font-color;
+    text-decoration: none;
+    transform: translateY(0);  
 
     &:hover::after
     {
-        top: 110%;
-        opacity: 1;
-        height: 2px;
         border-radius: 3px;
-        transform: translateY(0);
+        height: 2px;
+        opacity: 1;
+        top: 110%;
+        transform: translateY(3px);
     }
 
     &::after
@@ -23,7 +23,7 @@
         width: 100%;
         position: absolute;
         transform: translateY(-5px);
-        background: $primary-background-color;
-        transition: all 0.2s ease-in-out;
+        background: $primary-highlight-color;
+        transition: all 0.3s ease-in-out;
     }
 }

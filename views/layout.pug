@@ -15,26 +15,46 @@ mixin navLinks(...links)
       a.navbar__list-item.link(href="#" + link.toLowerCase()) #{link}
     a.navbar__list-item--special(href="/resume") RESUMÉ
 
+mixin project(img, title, subtitle, description, link1, link2, tags)
+  .project.is-flex
+    .project__content.is-flex
+      img.content__image(src="/images/" + img)
+      .project__info
+        h2.project__info-title #{title}
+        h4.project__info-subtitle #{subtitle}
+        p.project__info-description #{description}
+        a.project__button(href="" + link1) GitHub
+        a.project__button(href="/" + link2)
+        span.project__tags #{tags}
+
 block comment
   <!-- Thanks for visiting my website! -->
 doctype html
 html(lang="en-us")
   head
     meta(charset="utf-8")
+    meta(name="author", content="Chanse Taylor")
+    meta(name="description", content="Chanse's cool portfolio site")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     block head
       title Chanse Taylor's Home Page
+      link(rel="shortcut icon" href="/images/cloud.png")
       link(rel='stylesheet', href='/stylesheets/main.css')
   body
     .wrapper
+      block navbar
+        nav.navbar.is-flex
+          hr.rule--short
+          img.navbar__icon(alt="Nav Icon" src="/images/cloud.png")
+          hr.rule
+          +navLinks("About Me", "Projects", "Contact")
+          hr.rule--short
       header.header
         block header
-          nav.navbar.is-flex
-            hr.rule--short
-            img.navbar__icon(alt="Nav Icon" src="/images/cloud.png")
-            hr.rule
-            +navLinks("About", "Projects", "Contact")
-            hr.rule--short
+          .header__container
+            .header__greeting Hello! My name is
+            h1.header__name Chanse Taylor
+            h3.header__description I'm a software developer and artist in South Carolina.
       block content
       block footer
         footer#contact.footer.is-flex
